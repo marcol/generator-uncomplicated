@@ -3,13 +3,17 @@ Uncomplicated web Yeoman Generator
 
 ## Tasks
 - [ ] Add HTML template
+- [ ] Create package.json
+- [ ] Create .eslintrc
+- [ ] Create License
+- [ ] Create .gitignore
 - [ ] Add CSS bootstrap
 - [ ] Add JS bootstrap
-- [ ] Add test
+- [ ] Add testing framework
 - [ ] Prepare README
 - [ ] Create banners
 - [ ] Add folder structure
-- [ ] Prepare ESLint
+- [ ] Setup ESLint
 - [ ] Prepare CSSLint
 - [ ] Prepare HTML lint
 - [ ] Add BDD
@@ -20,6 +24,7 @@ Uncomplicated web Yeoman Generator
 - [ ] Implement basic generator
 - [ ] Check how releases work (tags)
 - [ ] Create npm package
+- [ ] Move methods in constructor to separate file
 
 ## Links
 *   [Webpack scaffolding](https://webpack.js.org/guides/scaffolding/)

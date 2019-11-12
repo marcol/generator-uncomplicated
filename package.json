@@ -1,0 +1,35 @@
+{
+  "name": "generator-uncomplicated",
+  "version": "0.1.0",
+  "description": "Uncomplicated web project",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "web",
+    "javascript",
+    "HTML",
+    "CSS"
+  ],
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcol/generator-web-uncomplicated.git"
+  },
+  "dependencies": {
+    "yeoman-generator": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.2",
+    "npm-check-updates": "^3.2.1"
+  }
+}
