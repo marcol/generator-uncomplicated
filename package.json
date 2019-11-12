@@ -15,7 +15,7 @@
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcol/generator-web-uncomplicated.git"
+    "url": "https://github.com/marcol/generator-uncomplicated.git"
   },
   "dependencies": {
     "yeoman-generator": "^4.2.0"
