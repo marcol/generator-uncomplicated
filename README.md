@@ -1,5 +1,5 @@
-# generator-web-uncomplicated
-Uncomplicated web Yeoman Generator
+# generator-uncomplicated
+Uncomplicated Yeoman Generator to kick-off your projects
 
 ## Tasks
 - [ ] Add HTML template
