@@ -13,8 +13,8 @@
 - [x] Add CSS bootstrap
 - [x] Add JS bootstrap
 - [x] Add folder structure
-- [ ] Prepare README with install, usage, feature
-- [ ] Create tag
+- [x] Prepare README with install, usage, feature
+- [x] Create tag
 
 ### Release 0.1.5
 - [ ] Check ES6 support

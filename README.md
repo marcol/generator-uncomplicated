@@ -21,5 +21,5 @@ Run `yo uncomplicated` and follow the instructions.
 *   Empty CSS file included in the HTML file
 *   Empty JavaScript file included in the HTML file
 *   Automatic creation of package.json
-*   Installed NPM packages
+*   Automatic installation of the required NPM packages
 *   Added License (ISC)
