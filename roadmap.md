@@ -5,12 +5,16 @@
 - [x] Create package.json
 - [x] Create summary
 - [x] Create goodbye
-- [ ] Add HTML template
+- [x] Add HTML template
+- [x] Add icon
+- [x] Check <link rel="apple-touch-icon" href="icon.png">
+- [ ] Check <meta name="theme-color" content="#ffffff">
 - [ ] Add CSS bootstrap
+- [ ] Add CSS reset
 - [ ] Add JS bootstrap
 - [ ] Add folder structure
-- [ ] Prepare README with install, usage, feature
 - [ ] Implement basic generator
+- [ ] Prepare README with install, usage, feature
 
 ### Release 0.1.5
 - [ ] Check ES6 support
@@ -29,21 +33,22 @@
 - [ ] Webpack integration
 - [ ] Server
 - [ ] Hot reload
+- [ ] Create npm package
 - [ ] Prepare README
-- [ ] Add chalk and other aesthetic improvement
 
 ### Release 0.4.0
 - [ ] Add testing framework
 - [ ] Add BDD (Mocha)
-- [ ] Prepare README
 - [ ] Create banners
 - [ ] Check how releases work (tags)
 - [ ] Include Travis
+- [ ] Prepare README
 
 ### Release 0.5.0
-- [ ] Create npm package
 - [ ] Add support to options
-
+- [ ] Add chalk and other aesthetic improvement
+- [ ] Prepare README
+- [ ] Add stylus support
 
 ## Links
 *   [Webpack scaffolding](https://webpack.js.org/guides/scaffolding/)
