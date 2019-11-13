@@ -1,43 +1,41 @@
 const Generator = require('yeoman-generator')
 
-module.exports = class extends Generator {
+class Uncomplicated extends Generator {
     /**
-     * initialization methods: checking current project state, getting
-     * configs, etc)
-     * @return void
+     * The available priorities are (in running order):
+     * 1. initializing - Your initialization methods (checking current project state, getting configs, etc)
+     * 2. prompting - Where you prompt users for options (where you’d call this.prompt())
+     * 3. configuring - S   aving configurations and configure the project (creating .editorconfig files and other metadata files)
+     * 4. default - If the method name doesn’t match a priority, it will be pushed to this group.
+     * 5. writing - Where you write the generator specific files (routes, controllers, etc)
+     * 6. conflicts - Where conflicts are handled (used internally)
+     * 7. install - Where installations are run (npm, bower)
+     * 8. end - Called last, cleanup, say good bye, etc
+     */
+    /**
+     * [initializing description]
+     * @return {[type]} [description]
      */
     initializing () {
-        console.log('Welcome to Uncomplicated, a simple generator to start your projects!\n')
-        console.log('We need some input from you to setup your project')
+        require('./priorities/initializing.js')()
     }
 
     /**
      * prompt users for options (where you’d call this.prompt())
-     * @return {Promise} Prompt response
+     * @return void
      */
     async prompting () {
-        this.answers = await this.prompt([
-            {
-                type: 'input',
-                name: 'name', // project name
-                message: 'Your project name',
-                default: this.appname
-            }
-        ])
+        const prompts = require('./priorities/prompting.js')(this)
+        this.answers = await this.prompt(prompts)
     }
 
     /**
      * write the generator specific files (routes, controllers, etc)
      * @return void
      */
-    writing () {
-        this.log('\n>>> Summary')
-        this.log('Project name: ', this.answers.name)
+    end () {
+        require('./priorities/end.js')(this)
     }
-
-    // configuring - Saving configurations and configure the project (creating .editorconfig files and other metadata files)
-    // default - If the method name doesn’t match a priority, it will be pushed to this group.
-    // conflicts - Where conflicts are handled (used internally)
-    // install - Where installations are run (npm, bower)
-    // end - Called last, cleanup, say good bye, etc
 }
+
+module.exports = Uncomplicated
