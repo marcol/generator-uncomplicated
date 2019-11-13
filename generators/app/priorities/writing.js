@@ -47,4 +47,16 @@ module.exports = function (gen) {
             project: gen.answers.project
         }
     )
+
+    // add master.css
+    gen.fs.copyTpl(
+        gen.templatePath('master.css'),
+        gen.destinationPath('./source/styles/master.css')
+    )
+
+    // add master.css
+    gen.fs.copyTpl(
+        gen.templatePath('index.js'),
+        gen.destinationPath('./source/scripts/index.js')
+    )
 }

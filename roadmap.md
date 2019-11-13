@@ -8,13 +8,13 @@
 - [x] Add HTML template
 - [x] Add icon
 - [x] Check <link rel="apple-touch-icon" href="icon.png">
-- [ ] Check <meta name="theme-color" content="#ffffff">
-- [ ] Add CSS bootstrap
-- [ ] Add CSS reset
-- [ ] Add JS bootstrap
-- [ ] Add folder structure
-- [ ] Implement basic generator
+- [x] Check <meta name="theme-color" content="#ffffff">
+- [x] Add CSS normalise
+- [x] Add CSS bootstrap
+- [x] Add JS bootstrap
+- [x] Add folder structure
 - [ ] Prepare README with install, usage, feature
+- [ ] Create tag
 
 ### Release 0.1.5
 - [ ] Check ES6 support
@@ -43,6 +43,7 @@
 - [ ] Check how releases work (tags)
 - [ ] Include Travis
 - [ ] Prepare README
+- [ ] Create yarn package
 
 ### Release 0.5.0
 - [ ] Add support to options

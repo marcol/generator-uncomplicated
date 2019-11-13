@@ -45,7 +45,9 @@ class Uncomplicated extends Generator {
      * Install (npm...)
      * @return void
      */
-    install () {}
+    install () {
+        require('./priorities/install.js')(this)
+    }
 
     /**
      *  Called last, cleanup, say good bye, etc
