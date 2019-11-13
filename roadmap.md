@@ -2,9 +2,9 @@
 ### Release 0.1.0
 - [x] Create files for priorities
 - [x] Create intro
-- [ ] Create package.json
-- [ ] Create summary
-- [ ] Create goodbye
+- [x] Create package.json
+- [x] Create summary
+- [x] Create goodbye
 - [ ] Add HTML template
 - [ ] Add CSS bootstrap
 - [ ] Add JS bootstrap

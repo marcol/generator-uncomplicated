@@ -1,5 +1,5 @@
 module.exports = function (gen) {
-    gen.log('\n\nCreating the necessary files...')
+    gen.log('\nCreating the necessary files...')
     gen.log('appname', gen.appname)
 
     // set package.json
