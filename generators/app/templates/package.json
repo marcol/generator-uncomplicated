@@ -1,13 +1,14 @@
 {
-    "name": "<%= appName %>",
+    "name": "<%= project %>",
     "version": "0.1.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": ""
+        "test": "",
+        "dev": ""
     },
     "keywords": [],
-    "author": "",
+    "author": "<%= name %> <<%= email %>>",
     "license": "ISC",
     "bugs": "",
     "homepage": "",

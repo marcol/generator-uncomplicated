@@ -42,6 +42,7 @@
 
 ### Release 0.5.0
 - [ ] Create npm package
+- [ ] Add support to options
 
 
 ## Links

@@ -7,7 +7,7 @@ class Uncomplicated extends Generator {
      * @return void
      */
     initializing () {
-        require('./priorities/initializing.js')()
+        require('./priorities/initializing.js')(this)
     }
 
     /**
@@ -16,6 +16,7 @@ class Uncomplicated extends Generator {
      */
     async prompting () {
         const prompts = require('./priorities/prompting.js')(this)
+        this.log('\nWe need some input from you to setup your project')
         this.answers = await this.prompt(prompts)
     }
 
@@ -30,7 +31,9 @@ class Uncomplicated extends Generator {
      * Qrite the generator specific files (routes, controllers, etc)
      * @return void
      */
-    writing () {}
+    writing () {
+        require('./priorities/writing.js')(this)
+    }
 
     /**
      * Handling conflicts (used internally)
