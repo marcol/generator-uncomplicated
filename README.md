@@ -1,30 +1,46 @@
 # generator-uncomplicated
-Uncomplicated Yeoman Generator to kick-off your projects
+Uncomplicated Yeoman Generator to kick-off your projects.
 
 ## Tasks
+### Release 0.1.0
 - [ ] Add HTML template
-- [ ] Create package.json
-- [ ] Create .eslintrc
-- [ ] Create License
-- [ ] Create .gitignore
 - [ ] Add CSS bootstrap
 - [ ] Add JS bootstrap
-- [ ] Add testing framework
-- [ ] Prepare README
-- [ ] Create banners
 - [ ] Add folder structure
+- [ ] Create package.json
+- [ ] Prepare README
+- [ ] Implement basic generator
+
+### Release 0.1.5
+- [ ] Check ES6 support
+- [ ] Move methods in constructor to separate file
+- [ ] Prepare README
+
+### Release 0.2.0
+- [ ] Create .eslintrc
 - [ ] Setup ESLint
 - [ ] Prepare CSSLint
 - [ ] Prepare HTML lint
-- [ ] Add BDD
-- [ ] Check ES6 support
+- [ ] Create .gitignore
+- [ ] Prepare README
+
+### Release 0.3.0
 - [ ] Webpack integration
 - [ ] Server
 - [ ] Hot reload
-- [ ] Implement basic generator
+- [ ] Prepare README
+
+### Release 0.4.0
+- [ ] Add testing framework
+- [ ] Add BDD (Mocha)
+- [ ] Prepare README
+- [ ] Create banners
 - [ ] Check how releases work (tags)
+- [ ] Include Travis
+
+### Release 0.5.0
 - [ ] Create npm package
-- [ ] Move methods in constructor to separate file
+
 
 ## Links
 *   [Webpack scaffolding](https://webpack.js.org/guides/scaffolding/)

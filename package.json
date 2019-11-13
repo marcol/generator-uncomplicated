@@ -1,7 +1,7 @@
 {
   "name": "generator-uncomplicated",
   "version": "0.1.0",
-  "description": "Uncomplicated web project",
+  "description": "Uncomplicated Yeoman generator for quick web projects",
   "files": [
     "generators"
   ],
