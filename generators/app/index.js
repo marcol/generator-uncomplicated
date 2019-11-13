@@ -2,19 +2,9 @@ const Generator = require('yeoman-generator')
 
 class Uncomplicated extends Generator {
     /**
-     * The available priorities are (in running order):
-     * 1. initializing - Your initialization methods (checking current project state, getting configs, etc)
-     * 2. prompting - Where you prompt users for options (where you’d call this.prompt())
-     * 3. configuring - S   aving configurations and configure the project (creating .editorconfig files and other metadata files)
-     * 4. default - If the method name doesn’t match a priority, it will be pushed to this group.
-     * 5. writing - Where you write the generator specific files (routes, controllers, etc)
-     * 6. conflicts - Where conflicts are handled (used internally)
-     * 7. install - Where installations are run (npm, bower)
-     * 8. end - Called last, cleanup, say good bye, etc
-     */
-    /**
-     * [initializing description]
-     * @return {[type]} [description]
+     * Initialization methods (checking current project state, getting
+     * configs, etc)
+     * @return void
      */
     initializing () {
         require('./priorities/initializing.js')()
@@ -30,7 +20,32 @@ class Uncomplicated extends Generator {
     }
 
     /**
-     * write the generator specific files (routes, controllers, etc)
+     * Saving configurations and configure the project (creating .editorconfig
+     * files and other metadata files)
+     * @return void
+     */
+    configuring () {}
+
+    /**
+     * Qrite the generator specific files (routes, controllers, etc)
+     * @return void
+     */
+    writing () {}
+
+    /**
+     * Handling conflicts (used internally)
+     * @return void
+     */
+    conflicts () {}
+
+    /**
+     * Install (npm...)
+     * @return void
+     */
+    install () {}
+
+    /**
+     *  Called last, cleanup, say good bye, etc
      * @return void
      */
     end () {

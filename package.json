@@ -7,16 +7,21 @@
   ],
   "keywords": [
     "yeoman-generator",
+    "uncomplicated",
+    "simple",
+    "basic",
+    "fast",
     "web",
     "javascript",
     "HTML",
     "CSS"
   ],
-  "license": "BSD-2-Clause",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/marcol/generator-uncomplicated.git"
   },
+  "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "dependencies": {
     "yeoman-generator": "^4.2.0"
   },

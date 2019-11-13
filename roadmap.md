@@ -1,10 +1,14 @@
 ## Tasks
 ### Release 0.1.0
+- [x] Create files for priorities
+- [x] Create intro
+- [ ] Create package.json
+- [ ] Create summary
+- [ ] Create goodbye
 - [ ] Add HTML template
 - [ ] Add CSS bootstrap
 - [ ] Add JS bootstrap
 - [ ] Add folder structure
-- [ ] Create package.json
 - [ ] Prepare README with install, usage, feature
 - [ ] Implement basic generator
 
@@ -26,6 +30,7 @@
 - [ ] Server
 - [ ] Hot reload
 - [ ] Prepare README
+- [ ] Add chalk and other aesthetic improvement
 
 ### Release 0.4.0
 - [ ] Add testing framework
@@ -42,3 +47,4 @@
 ## Links
 *   [Webpack scaffolding](https://webpack.js.org/guides/scaffolding/)
 *   [Writing your own Yeoman generator](https://yeoman.io/authoring/index.html)
+*   [Mocha Tests](https://mochajs.org/#installation)
