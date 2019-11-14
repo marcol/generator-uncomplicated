@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "",
-        "dev": ""
+        "lint": "npm run lint:css",
+        "lint:css": "csslint source/*/*.css --format=compact --quiet"
     },
     "keywords": [],
     "author": "<%= name %> <<%= email %>>",

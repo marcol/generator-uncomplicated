@@ -5,4 +5,9 @@ module.exports = function (gen) {
     gen.npmInstall(['normalize.css'], {
         save: true
     })
+
+    // install npm dev dependencies
+    gen.npmInstall(['csslint'], {
+        'save-dev': true
+    })
 }
