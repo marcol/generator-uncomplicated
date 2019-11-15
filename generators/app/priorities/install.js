@@ -10,7 +10,8 @@ module.exports = function (gen) {
     gen.npmInstall([
         'csslint',
         'eslint',
-        'eslint-plugin-html'
+        'eslint-plugin-html',
+        'eslint-plugin-markdown'
     ], {
         'save-dev': true
     })

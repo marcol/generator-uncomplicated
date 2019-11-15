@@ -16,7 +16,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'html'
+    'html',
+    'markdown'
   ],
   rules: {
       "indent": ["error", 4]
