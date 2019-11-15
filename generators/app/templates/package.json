@@ -1,12 +1,13 @@
 {
     "name": "<%= project %>",
     "version": "0.1.0",
-    "description": "",
+    "description": "Check out my new project: <%= project %>",
     "main": "index.js",
     "scripts": {
         "test": "",
-        "lint": "npm run lint:css",
-        "lint:css": "csslint source/*/*.css --format=compact --quiet"
+        "lint": "npm run lint:css | npm run lint:js",
+        "lint:css": "csslint source/*/*.css --format=compact",
+        "lint:js": "eslint source/*/*.js --format=compactt"
     },
     "keywords": [],
     "author": "<%= name %> <<%= email %>>",

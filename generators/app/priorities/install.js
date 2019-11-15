@@ -7,7 +7,10 @@ module.exports = function (gen) {
     })
 
     // install npm dev dependencies
-    gen.npmInstall(['csslint'], {
+    gen.npmInstall([
+        'csslint',
+        'eslint'
+    ], {
         'save-dev': true
     })
 }
