@@ -9,6 +9,7 @@ module.exports = function (gen) {
     const files = [
         ['package.json', 'package.json'],
         ['LICENSE', 'LICENSE'],
+        ['README.md', 'README.md'],
         ['index.html', './source/index.html'],
         ['assets/favicon.ico', './source/assets/favicon.ico'],
         ['assets/apple-touch-icon.png', './source/assets/apple-touch-icon.png'],
