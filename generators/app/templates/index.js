@@ -1,3 +1,3 @@
 (function () {
-    // your amazing code goes here
+  // your amazing code goes here
 }())

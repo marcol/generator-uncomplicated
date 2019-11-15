@@ -22,6 +22,6 @@ module.exports = {
     'filenames'
   ],
   rules: {
-      "indent": ["warn", 4]
+      "indent": ["warn", 2]
   }
 }
