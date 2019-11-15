@@ -13,6 +13,11 @@ module.exports = function (gen) {
     'eslint-plugin-html',
     'eslint-plugin-markdown',
     'eslint-plugin-filenames',
+    'eslint-plugin-json-format',
+    'eslint-plugin-import',
+    'eslint-plugin-node',
+    'eslint-plugin-promise',
+    'eslint-plugin-standard',
     'eslint-config-standard'
   ], {
     'save-dev': true

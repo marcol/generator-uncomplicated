@@ -1,9 +1,8 @@
 {
-  // Environments check if format is correct
   "env": {
     "browser": true,
     "node": true,
-    "es6": true,
+    "es6": true
   },
   "extends": "standard",
   "plugins": [
@@ -12,7 +11,7 @@
     "json-format",
     "filenames"
   ],
-  "rules": {}
+  "rules": {},
   "settings": {
     "html/indent": "+2",
     "html/report-bad-indent": "warn"
