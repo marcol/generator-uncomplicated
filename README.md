@@ -3,7 +3,7 @@
 [![NPM Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/generator-uncomplicated?logo=snyk&style=flat-square)](https://snyk.io/vuln/search?q=generator-uncomplicated&type=npm)
 [![Dependencies](https://img.shields.io/librariesio/release/npm/generator-uncomplicated?style=flat-square)](https://libraries.io/npm/generator-uncomplicated)
 [![Code Quality](https://img.shields.io/codacy/grade/e2f30765dfaa40b59b5c715b873aa65d?logo=codacy&style=flat-square)](https://support.codacy.com/hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?logo=javascript&style=flat-square)](https://standardjs.com)
 
 # generator-uncomplicated
 Uncomplicated Yeoman Generator to kick-off your projects.
