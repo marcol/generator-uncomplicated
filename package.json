@@ -22,6 +22,9 @@
     "url": "https://github.com/marcol/generator-uncomplicated.git"
   },
   "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
+  "publishConfig": {
+      "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "yeoman-generator": "^4.2.0"
   },

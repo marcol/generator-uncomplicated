@@ -1,0 +1,12 @@
+{
+    // Environments check if format is correct
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "plugins": [
+        "filenames"
+    ],
+    "rules": {
+
+    }
+}

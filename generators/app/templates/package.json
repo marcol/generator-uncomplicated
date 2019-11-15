@@ -7,7 +7,7 @@
         "test": "",
         "lint": "npm run lint:css | npm run lint:js",
         "lint:css": "csslint source/*/*.css --format=compact",
-        "lint:js": "eslint source/*/*.js --format=compactt"
+        "lint:js": "eslint source/*/*.js --format=codeframe"
     },
     "keywords": [],
     "author": "<%= name %> <<%= email %>>",
