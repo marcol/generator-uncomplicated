@@ -5,7 +5,7 @@ module.exports = {
     node: true
   },
   extends: [
-    // 'standard'
+    'standard'
   ],
   globals: {
     Atomics: 'readonly',

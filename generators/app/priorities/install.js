@@ -12,7 +12,8 @@ module.exports = function (gen) {
         'eslint',
         'eslint-plugin-html',
         'eslint-plugin-markdown',
-        'eslint-plugin-filenames'
+        'eslint-plugin-filenames',
+        'eslint-config-standard'
     ], {
         'save-dev': true
     })
