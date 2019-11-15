@@ -23,7 +23,7 @@
   },
   "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "publishConfig": {
-      "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "yeoman-generator": "^4.2.0"
@@ -31,6 +31,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.6.0",
+    "eslint-plugin-html": "^6.0.0",
     "npm-check-updates": "^3.2.1"
   }
 }

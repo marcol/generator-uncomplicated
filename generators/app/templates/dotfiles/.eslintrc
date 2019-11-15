@@ -4,9 +4,11 @@
     "node": true,
     "es6": true,
     "plugins": [
-        "filenames"
+        "html"
     ],
-    "rules": {
-
+    "rules": {}
+    "settings": {
+        "html/indent": "+4",
+        "html/report-bad-indent": "error"
     }
 }
