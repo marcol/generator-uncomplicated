@@ -1,4 +1,3 @@
-
 [![NPM Downloads](https://img.shields.io/npm/dt/generator-uncomplicated?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-uncomplicated)
 [![NPM Version](https://img.shields.io/npm/v/generator-uncomplicated?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-uncomplicated)
 [![NPM Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/generator-uncomplicated?logo=snyk&style=flat-square)](https://snyk.io/vuln/search?q=generator-uncomplicated&type=npm)
@@ -24,31 +23,28 @@ Run `yo uncomplicated` and follow the instructions.
 
 ## Scripts
 
-### Linting JavaScript
-```javascript
-npm run lint:js
-```
-
-### Linting CSS
-```javascript
-npm run lint:css
-```
-
 ### Linting
 You can check the code syntax and style for JavaScript and CSS.
 ```javascript
 npm run lint
 ```
-You can also check individually CSS ```npm run lint:css``` or JavaScript ```npm run lint:js```
+You can also check individually CSS `npm run lint:css` or JavaScript `npm run lint:js`
 
 ## Features
 *   Base HTML file with meta and icons
+
 *   Normalizations of CSS using [normalize.css](https://www.npmjs.com/package/normalize.css)
+
 *   Empty CSS file included in the HTML file
+
 *   Empty JavaScript file included in the HTML file
+
 *   Automatic creation of package.json
+
 *   Automatic installation of the required NPM packages
+
 *   License (ISC)
+
 *   JavaScript linting with [eslint](https://eslint.org/)
     *   Following [Standard](https://standardjs.com/rules.html) code style
     *   Extended linting to [json](https://github.com/Bkucera/eslint-plugin-json-format), [html](https://github.com/BenoitZugmeyer/eslint-plugin-html) and [markdown](https://github.com/eslint/eslint-plugin-markdown) files
