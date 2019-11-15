@@ -11,7 +11,8 @@ module.exports = function (gen) {
         'csslint',
         'eslint',
         'eslint-plugin-html',
-        'eslint-plugin-markdown'
+        'eslint-plugin-markdown',
+        'eslint-plugin-filenames'
     ], {
         'save-dev': true
     })

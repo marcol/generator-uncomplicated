@@ -5,7 +5,9 @@
     "es6": true,
     "plugins": [
         "html",
-        "markdown"
+        "markdown",
+        "json-format",
+        "filenames"
     ],
     "rules": {}
     "settings": {

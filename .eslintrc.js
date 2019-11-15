@@ -5,7 +5,7 @@ module.exports = {
     node: true
   },
   extends: [
-    'standard'
+    // 'standard'
   ],
   globals: {
     Atomics: 'readonly',
@@ -17,9 +17,11 @@ module.exports = {
   },
   plugins: [
     'html',
-    'markdown'
+    'markdown',
+    'json-format',
+    'filenames'
   ],
   rules: {
-      "indent": ["error", 4]
+      "indent": ["warn", 4]
   }
 }
