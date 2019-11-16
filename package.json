@@ -1,6 +1,6 @@
 {
   "name": "generator-uncomplicated",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Uncomplicated Yeoman generator for quick web projects",
   "keywords": [
     "CSS",
