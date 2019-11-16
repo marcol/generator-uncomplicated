@@ -19,7 +19,7 @@ module.exports = function (gen) {
     ['webpack.prod.js', 'webpack.prod.js'],
     ['webpack.dev.js', 'webpack.dev.js'],
     ['index.html', './source/index.html'],
-    ['assets/icon.svg', './source/assets/icon.svg'],
+    ['assets/logo.svg', './source/assets/logo.svg'],
     ['styles/master.css', './source/styles/master.css'],
     ['scripts/index.js', './source/scripts/index.js']
   ]
