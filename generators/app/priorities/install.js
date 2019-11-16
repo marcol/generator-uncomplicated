@@ -12,6 +12,7 @@ module.exports = function (gen) {
     'webpack-cli',
     'style-loader',
     'css-loader',
+    'file-loader',
     'eslint',
     'eslint-plugin-html',
     'eslint-plugin-markdown',
