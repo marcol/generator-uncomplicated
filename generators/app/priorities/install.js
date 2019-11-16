@@ -8,6 +8,8 @@ module.exports = function (gen) {
 
   // install npm dev dependencies
   gen.npmInstall([
+    'webpack',
+    'webpack-cli',
     'eslint',
     'eslint-plugin-html',
     'eslint-plugin-markdown',

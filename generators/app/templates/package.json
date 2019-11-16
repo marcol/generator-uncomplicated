@@ -11,10 +11,10 @@
   },
   "license": "ISC",
   "author": "<%= name %> <<%= email %>>",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "lint": "npm run lint:js | npm run lint:md | npm run lint:css",
-    "lint:css": "stylelint **/*.(html|css)",
+    "lint:css": "stylelint **/*.html **/*.css",
     "lint:js": "eslint . --format=codeframe",
     "lint:md": "remark . ",
     "test": ""

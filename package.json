@@ -13,10 +13,11 @@
     "web",
     "yeoman-generator"
   ],
+  "private": true,
   "scripts": {
     "test": "",
     "lint": "npm run lint:js | npm run lint:md | npm run lint:css",
-    "lint:css": "stylelint **/*.(html|css)",
+    "lint:css": "stylelint **/*.html **/*.css",
     "lint:js": "eslint . --format=codeframe",
     "lint:md": "remark . "
   },
