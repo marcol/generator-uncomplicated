@@ -10,43 +10,63 @@ Uncomplicated Yeoman Generator to kick-off your projects.
 
 ## Install
 First install Yeoman:
-```javascript
+```
 npm install -g yo
 ```
 
 Now install the ultimate generator:
-```javascript
+```
 npm install -g generator-uncomplicated
 ```
 
-## Usage
-Run `yo uncomplicated` and follow the instructions.
+Finally, run `yo uncomplicated` and follow the instructions.
 
-## Scripts
+## Developing
+
+### Local server
+Launch the webpack server:
+```
+npm run start
+// or you can use
+npm run serve
+```
 
 ### Linting
 You can check the code syntax and style for JavaScript and CSS.
-```javascript
+```
 npm run lint
 ```
-You can also check individually CSS `npm run lint:css` or JavaScript `npm run lint:js`
+You can also check individually CSS `npm run lint:css`, JavaScript `npm run lint:js` or Markdown `npm run lint:md`.
+
+### Testing
+Currently the test script only checks code validation. You can test your project by running:
+```
+npm run test
+```
+
+## Deploying
+You can create a build to deploy by running the following command:
+```
+npm run build
+```
+All the needed assets will be in the public folder. Please take in mind that this folder is set to be ignored in the .gitignore config file.
 
 ## Features
 *   Base HTML file with meta and icons
-
 *   Normalizations of CSS using [normalize.css](https://www.npmjs.com/package/normalize.css)
-
 *   Empty CSS file included in the HTML file
-
 *   Empty JavaScript file included in the HTML file
-
 *   Automatic creation of package.json
-
 *   Automatic installation of the required NPM packages
-
 *   License (ISC)
-
 *   JavaScript linting with [eslint](https://eslint.org/)
     *   Following [Standard](https://standardjs.com/rules.html) code style
     *   Extended linting to [json](https://github.com/Bkucera/eslint-plugin-json-format), [html](https://github.com/BenoitZugmeyer/eslint-plugin-html) and [markdown](https://github.com/eslint/eslint-plugin-markdown) files
     *   Linting of [filenames](https://github.com/selaux/eslint-plugin-filenames) according to exports
+*   Markdown linting with [remarklint](https://github.com/remarkjs/remark-lint), using the [recommended preset](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-recommended).
+*   CSS linting with [stylelint](https://github.com/stylelint/stylelint) following [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+*   [Webpack](https://webpack.js.org/) support
+    *   Production and Development environments
+    *   Hot reload
+    *   CSS and JavaScript bundling
+*   Automatic generation of logos and icons from logo.svg
