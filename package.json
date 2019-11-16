@@ -13,7 +13,6 @@
     "web",
     "yeoman-generator"
   ],
-  "private": true,
   "scripts": {
     "lint": "npm run lint:js && npm run lint:md && npm run lint:css",
     "lint:css": "stylelint **/*.html **/*.css; exit 0",
