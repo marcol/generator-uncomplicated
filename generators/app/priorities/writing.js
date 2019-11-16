@@ -15,9 +15,10 @@ module.exports = function (gen) {
     ['assets/apple-touch-icon.png', './source/assets/apple-touch-icon.png'],
     ['master.css', './source/styles/master.css'],
     ['index.js', './source/scripts/index.js'],
-    ['dotfiles/.eslintrc', '.eslintrc'],
+    ['dotfiles/.eslintrc.js', '.eslintrc.js'],
     ['dotfiles/.eslintignore', '.eslintignore'],
-    ['dotfiles/.gitignore', '.gitignore']
+    ['dotfiles/.gitignore', '.gitignore'],
+    ['dotfiles/.remarkrc.js', '.remarkrc.js']
   ]
 
   gen.log('\nCreating the necessary files...')

@@ -19,9 +19,6 @@
     "lint:md": "remark . ",
     "test": ""
   },
-  "remarkConfig": {
-    "plugins": ["remark-preset-lint-recommended"]
-  },
   "dependencies": {},
   "devDependencies": {}
 }
