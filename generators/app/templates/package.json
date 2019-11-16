@@ -13,8 +13,8 @@
   "author": "<%= name %> <<%= email %>>",
   "main": "index.js",
   "scripts": {
-    "lint": "npm run lint:css | npm run lint:js | npm run lint:md",
-    "lint:css": "csslint . --format=compact",
+    "lint": "npm run lint:js | npm run lint:md | npm run lint:css",
+    "lint:css": "stylelint **/*.(html|css)",
     "lint:js": "eslint . --format=codeframe",
     "lint:md": "remark . ",
     "test": ""

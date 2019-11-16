@@ -8,7 +8,6 @@ module.exports = function (gen) {
 
   // install npm dev dependencies
   gen.npmInstall([
-    'csslint',
     'eslint',
     'eslint-plugin-html',
     'eslint-plugin-markdown',
@@ -21,7 +20,9 @@ module.exports = function (gen) {
     'eslint-config-standard',
     'remark-cli',
     'remark-lint',
-    'remark-preset-lint-recommended'
+    'remark-preset-lint-recommended',
+    'stylelint',
+    'stylelint-config-standard'
   ], {
     'save-dev': true
   })
