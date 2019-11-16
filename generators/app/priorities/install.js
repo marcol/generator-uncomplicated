@@ -1,13 +1,9 @@
 module.exports = function (gen) {
-  gen.log('\nInstalling dependencies...')
+  const dependencies = [
+    'normalize.css'
+  ]
 
-  // install npm dependencies
-  gen.npmInstall(['normalize.css'], {
-    save: true
-  })
-
-  // install npm dev dependencies
-  gen.npmInstall([
+  const devDependencies = [
     'webpack',
     'webpack-cli',
     'style-loader',
@@ -18,6 +14,8 @@ module.exports = function (gen) {
     'favicons-webpack-plugin',
     'webpack-dev-server',
     'webpack-merge',
+    'mini-css-extract-plugin',
+    'optimize-css-assets-webpack-plugin',
     'eslint-loader',
     'eslint',
     'eslint-plugin-html',
@@ -34,7 +32,11 @@ module.exports = function (gen) {
     'remark-preset-lint-recommended',
     'stylelint',
     'stylelint-config-standard'
-  ], {
-    'save-dev': true
-  })
+  ]
+
+  gen.log('\nInstalling dependencies...')
+
+  // install npm dependencies
+  gen.npmInstall(dependencies, { save: true, skipMessage: true })
+  gen.npmInstall(devDependencies, { 'save-dev': true, skipMessage: true })
 }
