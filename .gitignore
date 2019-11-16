@@ -18,6 +18,7 @@ tmp/
 # dotenv environment variables file
 .env
 .env.test
+.env.local
 
 # files
 *.diff
