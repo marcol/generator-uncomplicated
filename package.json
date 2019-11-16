@@ -2,26 +2,31 @@
   "name": "generator-uncomplicated",
   "version": "0.2.0",
   "description": "Uncomplicated Yeoman generator for quick web projects",
-  "files": [
-    "generators"
-  ],
   "keywords": [
-    "yeoman-generator",
-    "uncomplicated",
-    "simple",
+    "CSS",
+    "HTML",
     "basic",
     "fast",
-    "web",
     "javascript",
-    "HTML",
-    "CSS"
+    "simple",
+    "uncomplicated",
+    "web",
+    "yeoman-generator"
   ],
-  "license": "ISC",
+  "scripts": {
+    "test": "",
+    "lint": "npm run lint:js",
+    "lint:js": "eslint . --format=codeframe"
+  },
+  "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/marcol/generator-uncomplicated.git"
   },
-  "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
+  "license": "ISC",
+  "files": [
+    "generators"
+  ],
   "dependencies": {
     "yeoman-generator": "^4.2.0"
   },

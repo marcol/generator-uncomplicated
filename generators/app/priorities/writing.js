@@ -16,6 +16,7 @@ module.exports = function (gen) {
     ['master.css', './source/styles/master.css'],
     ['index.js', './source/scripts/index.js'],
     ['dotfiles/.eslintrc', '.eslintrc'],
+    ['dotfiles/.eslintignore', '.eslintignore'],
     ['dotfiles/.gitignore', '.gitignore']
   ]
 
