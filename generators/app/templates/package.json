@@ -13,12 +13,14 @@
   "author": "<%= name %> <<%= email %>>",
   "private": true,
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.prod.js",
     "lint": "npm run lint:js | npm run lint:md | npm run lint:css",
     "lint:css": "stylelint **/*.html **/*.css",
     "lint:js": "eslint . --format=codeframe",
     "lint:md": "remark . ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npm run start",
+    "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "dependencies": {},
   "devDependencies": {}

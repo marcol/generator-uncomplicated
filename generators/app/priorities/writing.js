@@ -15,10 +15,11 @@ module.exports = function (gen) {
     ['dotfiles/.gitignore', '.gitignore'],
     ['dotfiles/.remarkrc.js', '.remarkrc.js'],
     ['dotfiles/.stylelintrc.json', '.stylelintrc.json'],
-    ['webpack.config.js', 'webpack.config.js'],
-    ['assets/favicon.ico', './source/assets/favicon.ico'],
-    ['assets/apple-touch-icon.png', './source/assets/apple-touch-icon.png'],
+    ['webpack.common.js', 'webpack.common.js'],
+    ['webpack.prod.js', 'webpack.prod.js'],
+    ['webpack.dev.js', 'webpack.dev.js'],
     ['index.html', './source/index.html'],
+    ['assets/icon.svg', './source/assets/icon.svg'],
     ['styles/master.css', './source/styles/master.css'],
     ['scripts/index.js', './source/scripts/index.js']
   ]
