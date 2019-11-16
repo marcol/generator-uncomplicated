@@ -13,11 +13,12 @@
   "author": "<%= name %> <<%= email %>>",
   "private": true,
   "scripts": {
+    "build": "webpack",
     "lint": "npm run lint:js | npm run lint:md | npm run lint:css",
     "lint:css": "stylelint **/*.html **/*.css",
     "lint:js": "eslint . --format=codeframe",
     "lint:md": "remark . ",
-    "test": ""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
   "devDependencies": {}

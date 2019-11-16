@@ -10,16 +10,17 @@ module.exports = function (gen) {
     ['package.json', 'package.json'],
     ['LICENSE', 'LICENSE'],
     ['README.md', 'README.md'],
-    ['index.html', './source/index.html'],
-    ['assets/favicon.ico', './source/assets/favicon.ico'],
-    ['assets/apple-touch-icon.png', './source/assets/apple-touch-icon.png'],
-    ['master.css', './source/styles/master.css'],
-    ['index.js', './source/scripts/index.js'],
     ['dotfiles/.eslintrc.json', '.eslintrc.json'],
     ['dotfiles/.eslintignore', '.eslintignore'],
     ['dotfiles/.gitignore', '.gitignore'],
     ['dotfiles/.remarkrc.js', '.remarkrc.js'],
-    ['dotfiles/.stylelintrc.json', '.stylelintrc.json']
+    ['dotfiles/.stylelintrc.json', '.stylelintrc.json'],
+    ['webpack.config.js', 'webpack.config.js'],
+    ['index.html', './public/index.html'],
+    ['assets/favicon.ico', './public/assets/favicon.ico'],
+    ['assets/apple-touch-icon.png', './public/assets/apple-touch-icon.png'],
+    ['styles/master.css', './source/styles/master.css'],
+    ['scripts/index.js', './source/scripts/index.js']
   ]
 
   gen.log('\nCreating the necessary files...')

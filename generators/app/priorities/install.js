@@ -10,6 +10,8 @@ module.exports = function (gen) {
   gen.npmInstall([
     'webpack',
     'webpack-cli',
+    'style-loader',
+    'css-loader',
     'eslint',
     'eslint-plugin-html',
     'eslint-plugin-markdown',
