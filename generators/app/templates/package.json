@@ -13,10 +13,14 @@
   "author": "<%= name %> <<%= email %>>",
   "main": "index.js",
   "scripts": {
-    "lint": "npm run lint:css | npm run lint:js",
+    "lint": "npm run lint:css | npm run lint:js | npm run lint:md",
     "lint:css": "csslint . --format=compact",
     "lint:js": "eslint . --format=codeframe",
+    "lint:md": "remark . ",
     "test": ""
+  },
+  "remarkConfig": {
+    "plugins": ["remark-preset-lint-recommended"]
   },
   "dependencies": {},
   "devDependencies": {}

@@ -18,7 +18,10 @@ module.exports = function (gen) {
     'eslint-plugin-node',
     'eslint-plugin-promise',
     'eslint-plugin-standard',
-    'eslint-config-standard'
+    'eslint-config-standard',
+    'remark-cli',
+    'remark-lint',
+    'remark-preset-lint-recommended'
   ], {
     'save-dev': true
   })
