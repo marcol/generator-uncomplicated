@@ -13,6 +13,8 @@ module.exports = function (gen) {
     'style-loader',
     'css-loader',
     'file-loader',
+    'html-webpack-plugin',
+    'clean-webpack-plugin',
     'eslint',
     'eslint-plugin-html',
     'eslint-plugin-markdown',
