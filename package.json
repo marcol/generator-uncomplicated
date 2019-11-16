@@ -15,11 +15,11 @@
   ],
   "private": true,
   "scripts": {
-    "lint": "npm run lint:js | npm run lint:md | npm run lint:css",
-    "lint:css": "stylelint **/*.html **/*.css",
-    "lint:js": "eslint . --format=codeframe",
-    "lint:md": "remark . ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npm run lint:js && npm run lint:md && npm run lint:css",
+    "lint:css": "stylelint **/*.html **/*.css; exit 0",
+    "lint:js": "eslint .; exit 0",
+    "lint:md": "remark .; exit 0 ",
+    "test": "npm run lint"
   },
   "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "repository": {

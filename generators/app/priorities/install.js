@@ -18,6 +18,7 @@ module.exports = function (gen) {
     'favicons-webpack-plugin',
     'webpack-dev-server',
     'webpack-merge',
+    'eslint-loader',
     'eslint',
     'eslint-plugin-html',
     'eslint-plugin-markdown',

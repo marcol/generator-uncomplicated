@@ -32,6 +32,14 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      }, {
+        test: /\.jsx?$/,
+        enforce: 'pre',
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+        options: {
+          emitWarning: true
+        }
       }
     ]
   }
