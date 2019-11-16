@@ -16,8 +16,8 @@ module.exports = function (gen) {
     ['dotfiles/.remarkrc.js', '.remarkrc.js'],
     ['dotfiles/.stylelintrc.json', '.stylelintrc.json'],
     ['webpack.config.js', 'webpack.config.js'],
-    ['assets/favicon.ico', './public/assets/favicon.ico'],
-    ['assets/apple-touch-icon.png', './public/assets/apple-touch-icon.png'],
+    ['assets/favicon.ico', './source/assets/favicon.ico'],
+    ['assets/apple-touch-icon.png', './source/assets/apple-touch-icon.png'],
     ['index.html', './source/index.html'],
     ['styles/master.css', './source/styles/master.css'],
     ['scripts/index.js', './source/scripts/index.js']

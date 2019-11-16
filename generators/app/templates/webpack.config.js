@@ -1,12 +1,10 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: './source/scripts/index.js',
   plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin()
+    new CleanWebpackPlugin()
   ],
   output: {
     filename: 'scripts.js',
@@ -30,6 +28,13 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      }, {
+        test: /\.(html)$/,
+        loader: 'file-loader',
+        options: {
+          context: 'source',
+          name: '[path][name].[ext]'
+        }
       }
     ]
   }
