@@ -53,7 +53,7 @@ All the needed assets will be in the public folder. Please take in mind that thi
 
 ## Features
 *   Base HTML file with meta and icons
-*   Normalizations of CSS using [normalize.css](https://www.npmjs.com/package/normalize.css)
+*   Normalisation of CSS using [normalize.css](https://www.npmjs.com/package/normalize.css)
 *   Empty CSS file included in the HTML file
 *   Empty JavaScript file included in the HTML file
 *   Automatic creation of package.json
