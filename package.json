@@ -1,6 +1,6 @@
 {
   "name": "generator-uncomplicated",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "Uncomplicated Yeoman generator for quick web projects",
   "keywords": [
     "CSS",
@@ -41,6 +41,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^1.0.1",
+    "eslint-plugin-mocha": "^6.2.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",

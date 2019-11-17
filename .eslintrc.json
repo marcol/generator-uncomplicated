@@ -20,7 +20,8 @@
     "html",
     "markdown",
     "json-format",
-    "filenames"
+    "filenames",
+    "mocha"
   ],
   "rules": {
       "indent": ["warn", 2]
