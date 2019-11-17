@@ -14,6 +14,7 @@ module.exports = function (gen) {
     ['dotfiles/.eslintignore', '.eslintignore'],
     ['dotfiles/.gitignore', '.gitignore'],
     ['dotfiles/.remarkrc.js', '.remarkrc.js'],
+    ['dotfiles/.npmrc', '.npmrc'],
     ['dotfiles/.stylelintrc.json', '.stylelintrc.json'],
     ['webpack.common.js', 'webpack.common.js'],
     ['webpack.prod.js', 'webpack.prod.js'],
