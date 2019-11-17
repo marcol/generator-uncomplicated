@@ -6,7 +6,6 @@ module.exports = function (gen) {
   const devDependencies = [
     'webpack',
     'webpack-cli',
-    'style-loader',
     'css-loader',
     'file-loader',
     'html-webpack-plugin',
@@ -14,6 +13,9 @@ module.exports = function (gen) {
     'webpack-dev-server',
     'webpack-merge',
     'favicons-webpack-plugin',
+    'extract-css-chunks-webpack-plugin',
+    'optimize-css-assets-webpack-plugin',
+    'terser-webpack-plugin',
     'eslint-loader',
     'eslint',
     'eslint-plugin-html',

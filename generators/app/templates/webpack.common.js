@@ -7,8 +7,8 @@ module.exports = {
   entry: './source/scripts/index.js',
   plugins: [
     new HtmlWebpackPlugin({ template: 'source/index.html' }),
-    new CleanWebpackPlugin(),
-    new FaviconsWebpackPlugin('./source/assets/logo.svg')
+    new FaviconsWebpackPlugin('./source/assets/logo.svg'),
+    new CleanWebpackPlugin()
   ],
   output: {
     filename: 'scripts.js',
@@ -17,12 +17,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }, {
         test: /\.(png|svg|jpg|gif|ico)$/,
         use: [
           'file-loader'
