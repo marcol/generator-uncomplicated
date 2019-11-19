@@ -1,6 +1,5 @@
 module.exports = function (gen) {
-  const fs = require('fs')
-  const files = JSON.parse(fs.readFileSync(gen.templatePath('../json/files.json')))
+  const files = require('../config/files.js')
   const data = {
     project: gen.answers.project,
     name: gen.answers.name,

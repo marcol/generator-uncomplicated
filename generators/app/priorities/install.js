@@ -1,10 +1,9 @@
 module.exports = function (gen) {
-  const fs = require('fs')
-  const json = JSON.parse(fs.readFileSync(gen.templatePath('../json/dependencies.json')))
+  const deps = require('../config/dependencies.js')
 
   gen.log('\nInstalling dependencies...')
 
   // install npm dependencies
-  gen.npmInstall(json.dependencies, { save: true, skipMessage: true })
-  gen.npmInstall(json.devDependencies, { 'save-dev': true, skipMessage: true })
+  gen.npmInstall(deps.dependencies, { save: true, skipMessage: true })
+  gen.npmInstall(deps.devDependencies, { 'save-dev': true, skipMessage: true })
 }
