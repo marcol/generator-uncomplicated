@@ -1,6 +1,6 @@
 const assert = require('yeoman-assert')
-const files = require('../generators/app/config/files.js')
-const prompts = require('./config/prompts.js')
+const files = require('../generators/app/config/files')
+const prompts = require('./config/prompts')
 const targets = files.map((file) => file.target)
 
 describe('Generator deploy', function () {
@@ -18,10 +18,6 @@ describe('Generator deploy', function () {
   it('checks installed dependencies', () => {
     assert.file('package-lock.json')
   })
-
-  it('Test dev environment', () => {})
-  it('Test if dependencies are up-to-date', () => {})
-  it('Test build', () => {})
 })
 
 module.exports = null

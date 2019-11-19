@@ -3,7 +3,7 @@
 const helpers = require('yeoman-test')
 const path = require('path')
 const rimraf = require('rimraf')
-const prompts = require('./config/prompts.js')
+const prompts = require('./config/prompts')
 
 describe('Uncomplicated generator tests\n\n', function () {
   this.timeout(90000)
@@ -22,8 +22,10 @@ describe('Uncomplicated generator tests\n\n', function () {
       })
   })
 
-  require('./lint.js')
+  require('./lint')
   require('./generate')
+  require('./dev')
+  require('./build')
 
   after(() => {
     rimraf.sync(path.join(__dirname, '.tmp'))
