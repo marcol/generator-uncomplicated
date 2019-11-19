@@ -1,32 +1,18 @@
+/* eslint "max-lines-per-function": ["error", 50] */
+
 const helpers = require('yeoman-test')
 const assert = require('yeoman-assert')
 const path = require('path')
 const rimraf = require('rimraf')
+const fs = require('fs')
+const json = JSON.parse(fs.readFileSync(path.join(__dirname, '../generators/app/json/files.json')))
+const files = json.map((cur) => cur.target)
 
 const prompts = {
   project: 'test project',
   name: 'Jane Doe',
   email: 'jane@test.org'
 }
-
-const files = [
-  'package.json',
-  'LICENSE',
-  'README.md',
-  '.eslintrc.json',
-  '.eslintignore',
-  '.gitignore',
-  '.remarkrc.js',
-  '.npmrc',
-  '.stylelintrc.json',
-  'webpack.common.js',
-  'webpack.prod.js',
-  'webpack.dev.js',
-  './source/index.html',
-  './source/assets/logo.svg',
-  './source/styles/master.css',
-  './source/scripts/index.js'
-]
 
 describe('Generator deploy', function () {
   this.timeout(90000)

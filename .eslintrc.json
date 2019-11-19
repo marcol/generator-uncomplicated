@@ -24,6 +24,14 @@
     "mocha"
   ],
   "rules": {
-      "indent": ["warn", 2]
+      "indent": ["warn", 2],
+      "complexity": ["error", 12],
+      "max-depth": ["error", 3],
+      "max-lines": ["error", 120],
+      "max-lines-per-function": ["error", 20],
+      "max-nested-callbacks": ["error", 3],
+      "max-params": ["error", 3],
+      "max-statements": ["error", 10],
+      "max-statements-per-line": ["error", { "max": 1 }]
   }
 }
