@@ -51,6 +51,9 @@ npm run build
 ```
 All the needed assets will be in the public folder. Please take in mind that this folder is set to be ignored in the .gitignore config file.
 
+## Cookbook
+You can check the [cookbook](COOKBOOK.md) to expand the generated output functionality.
+
 ## Features
 *   Base HTML file with meta and icons
 *   Normalisation of CSS using [normalize.css](https://www.npmjs.com/package/normalize.css)
