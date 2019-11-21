@@ -56,6 +56,7 @@ All the needed assets will be in the public folder. Please take in mind that thi
 *   Normalisation of CSS using [normalize.css](https://www.npmjs.com/package/normalize.css)
 *   Empty CSS file included in the HTML file
 *   Empty JavaScript file included in the HTML file
+*   Babel support with linting
 *   Automatic creation of package.json
 *   Automatic installation of the required NPM packages
 *   License (ISC)
