@@ -21,9 +21,10 @@ npm install -g generator-uncomplicated
 
 Finally, run `yo uncomplicated` and follow the instructions.
 
-## Developing
+## Uage
+### Developing
 
-### Local server
+#### Local server
 Launch the webpack server:
 ```
 npm run start
@@ -31,20 +32,20 @@ npm run start
 npm run serve
 ```
 
-### Linting
+#### Linting
 You can check the code syntax and style for JavaScript and CSS.
 ```
 npm run lint
 ```
 You can also check individually CSS `npm run lint:css`, JavaScript `npm run lint:js` or Markdown `npm run lint:md`.
 
-### Testing
+#### Testing
 Currently the test script only checks code validation. You can test your project by running:
 ```
 npm run test
 ```
 
-## Deploying
+### Deploying
 You can create a build to deploy by running the following command:
 ```
 npm run build
