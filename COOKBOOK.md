@@ -9,7 +9,7 @@ plugins: [
   new HtmlWebpackPlugin({
     filename: 'test.html',
     template: 'src/assets/test.html'
-  })
+  }),
   new FaviconsWebpackPlugin('./source/assets/logo.svg'),
   new CleanWebpackPlugin()
 ]
