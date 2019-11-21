@@ -13,8 +13,7 @@ describe('Uncomplicated generator tests\n\n', function () {
       .inDir(path.join(__dirname, '.tmp'))
       .withPrompts(prompts)
       .withOptions({
-        'skip-install': false,
-        'skip-cache': false
+        'skip-install': false
       })
       .then(function () {
         console.log('\n-----\n')
@@ -24,8 +23,6 @@ describe('Uncomplicated generator tests\n\n', function () {
 
   require('./lint')
   require('./generate')
-  require('./dev')
-  require('./build')
 
   after(() => {
     rimraf.sync(path.join(__dirname, '.tmp'))
