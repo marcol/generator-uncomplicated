@@ -66,5 +66,9 @@ module.exports = [
   {
     source: 'scripts/index.js',
     target: './source/scripts/index.js'
+  },
+  {
+    source: 'test/index.js',
+    target: './test/index.js'
   }
 ]

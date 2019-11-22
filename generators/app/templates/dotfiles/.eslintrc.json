@@ -2,14 +2,16 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "mocha": true
   },
   "extends": "standard",
   "plugins": [
     "html",
     "markdown",
     "json-format",
-    "filenames"
+    "filenames",
+    "mocha"
   ],
   "rules": {
     "indent": ["warn", 2],

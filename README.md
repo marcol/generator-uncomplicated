@@ -40,7 +40,7 @@ npm run lint
 You can also check individually CSS `npm run lint:css`, JavaScript `npm run lint:js` or Markdown `npm run lint:md`.
 
 #### Testing
-Currently the test script only checks code validation. You can test your project by running:
+It runs the [Mocha](https://mochajs.org/) tests added to `test/index.js`. You can test your project by running:
 ```
 npm run test
 ```
@@ -63,6 +63,7 @@ You can check the [cookbook](COOKBOOK.md) to expand the generated output functio
 *   [Babel](https://babeljs.io/) support with linting
 *   Automatic creation of package.json
 *   Automatic installation of the required NPM packages
+*   Basic template for [Mocha](https://mochajs.org/) tests
 *   License (ISC)
 *   JavaScript linting with [eslint](https://eslint.org/)
     *   Following [Standard](https://standardjs.com/rules.html) code style
