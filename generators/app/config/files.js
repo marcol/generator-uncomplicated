@@ -36,6 +36,10 @@ module.exports = [
     target: '.stylelintrc.json'
   },
   {
+    source: 'dotfiles/.stylelintignore',
+    target: '.stylelintignore'
+  },
+  {
     source: 'webpack.common.js',
     target: 'webpack.common.js'
   },

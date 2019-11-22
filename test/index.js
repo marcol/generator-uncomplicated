@@ -21,7 +21,6 @@ describe('Uncomplicated generator tests\n\n', function () {
       })
   })
 
-  require('./lint')
   require('./generate')
 
   after(() => {
