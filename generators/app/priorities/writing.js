@@ -1,4 +1,3 @@
-/* eslint "max-lines-per-function": ["error", 25] */
 const chalk = require('chalk')
 
 module.exports = function (gen) {
@@ -8,13 +7,18 @@ module.exports = function (gen) {
     name: gen.answers.name,
     email: gen.answers.email,
     year: (new Date().getFullYear()),
-    hasMocha: gen.options.mocha
+    hasMocha: gen.options.mocha,
+    hasWebpack: gen.options.webpack
   }
 
   gen.log(chalk.bold('\nCreating the necessary files...'))
 
   if (gen.options.mocha) {
     files = files.concat(require('../settings/mocha-files.js'))
+  }
+
+  if (gen.options.webpack) {
+    files = files.concat(require('../settings/webpack-files.js'))
   }
 
   // copying files

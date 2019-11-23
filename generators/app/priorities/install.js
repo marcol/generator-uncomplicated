@@ -1,12 +1,15 @@
 const chalk = require('chalk')
 
 module.exports = function (gen) {
-  const deps = require('../settings/dependencies.js')
+  const deps = require('../settings/dependencies')
+  const webpackDeps = require('../settings/webpack-dependencies')
 
   gen.log(chalk.bold('\nInstalling dependencies...'))
 
   // set up static test
-  if (!gen.options.webpack) {
+  if (gen.options.webpack) {
+    deps.devDependencies = deps.devDependencies.concat(webpackDeps.devDependencies)
+  } else {
     deps.devDependencies.push('static-server')
   }
 

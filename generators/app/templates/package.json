@@ -17,7 +17,8 @@
     "lint:js": "eslint .; exit 0",
     "lint:md": "remark .; exit 0",
     "serve": "npm run start",
-    "start": "static-server --port 8080 source/",
+    "start": "<% if (hasWebpack) { %>webpack-dev-server --open --config webpack.dev.js<% } else { %>static-server --port 8080 source/<% } %>",
+    "build": "<% if (hasWebpack) { %>webpack --config webpack.prod.js<% } %>",
     "test": "<% if (hasMocha) { %>mocha 'test/index.js'<% } %>"
   },
   "dependencies": {},

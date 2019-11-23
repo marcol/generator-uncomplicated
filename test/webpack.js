@@ -1,29 +1,30 @@
 const assert = require('yeoman-assert')
 const path = require('path')
 const helpers = require('yeoman-test')
-const target = 'test/index.js'
+const files = require('../generators/app/settings/webpack-files')
+const targets = files.map((file) => file.target)
 
-describe('Test --mocha', function () {
+describe('Test --webpack', function () {
   before(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(path.join(__dirname, '.tmp'))
       .withOptions({
         'skip-install': true,
-        mocha: true
+        webpack: true
       })
       .then(function () {
         return true
       })
   })
 
-  it('checks if test file', () => {
-    assert.file(target)
+  it('checks for config file', () => {
+    assert.file(targets)
   })
 
   it('checks if webpack is installed', () => {
     assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), {
       scripts: {
-        test: 'mocha \'test/index.js\''
+        build: 'webpack --config webpack.prod.js'
       }
     })
   })

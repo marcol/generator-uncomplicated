@@ -5,7 +5,8 @@ module.exports = function (gen) {
     name: gen.answers.name,
     email: gen.answers.email,
     year: (new Date().getFullYear()),
-    hasMocha: gen.options.mocha
+    hasMocha: gen.options.mocha,
+    hasWebpack: gen.options.webpack
   }
 
   // copying files
