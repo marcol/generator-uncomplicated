@@ -12,7 +12,11 @@ module.exports = [
     target: 'webpack.dev.js'
   },
   {
-    source: 'webpack.dev.js',
-    target: 'webpack.dev.js'
+    source: 'webpack-index.html',
+    target: './source/index.html'
+  },
+  {
+    source: 'scripts/webpack-index.js',
+    target: './source/scripts/index.js'
   }
 ]
