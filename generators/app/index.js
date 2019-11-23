@@ -2,13 +2,21 @@ const Generator = require('yeoman-generator')
 const chalk = require('chalk')
 
 class Uncomplicated extends Generator {
+  constructor (args, opts) {
+    super(args, opts)
+
+    // set options
+    this.option('mocha')
+    this.option('webpack')
+  }
+
   /**
    * Initialization methods (checking current project state, getting
    * configs, etc)
    * @return void
    */
   initializing () {
-    require('./priorities/initializing.js')(this)
+    require('./priorities/initializing')(this)
   }
 
   /**
@@ -16,7 +24,7 @@ class Uncomplicated extends Generator {
    * @return void
    */
   async prompting () {
-    const prompts = require('./priorities/prompting.js')(this)
+    const prompts = require('./priorities/prompting')(this)
     this.log(chalk.bold('\nWe need some input from you to setup your project'))
     this.answers = await this.prompt(prompts)
   }
@@ -26,28 +34,24 @@ class Uncomplicated extends Generator {
    * files and other metadata files)
    * @return void
    */
-  configuring () {}
+  configuring () {
+    require('./priorities/configuring')(this)
+  }
 
   /**
    * Qrite the generator specific files (routes, controllers, etc)
    * @return void
    */
   writing () {
-    require('./priorities/writing.js')(this)
+    require('./priorities/writing')(this)
   }
-
-  /**
-   * Handling conflicts (used internally)
-   * @return void
-   */
-  conflicts () {}
 
   /**
    * Install (npm...)
    * @return void
    */
   install () {
-    require('./priorities/install.js')(this)
+    require('./priorities/install')(this)
   }
 
   /**
@@ -55,7 +59,7 @@ class Uncomplicated extends Generator {
    * @return void
    */
   end () {
-    require('./priorities/end.js')(this)
+    require('./priorities/end')(this)
   }
 }
 

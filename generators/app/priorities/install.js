@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 
 module.exports = function (gen) {
-  const deps = require('../config/dependencies.js')
+  const deps = require('../settings/dependencies.js')
 
   gen.log(chalk.bold('\nInstalling dependencies...'))
 

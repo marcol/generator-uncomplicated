@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 
 module.exports = function (gen) {
-  const files = require('../settings/files.js')
+  const files = require('../settings/config.js')
   const data = {
     project: gen.answers.project,
     name: gen.answers.name,
@@ -9,7 +9,7 @@ module.exports = function (gen) {
     year: (new Date().getFullYear())
   }
 
-  gen.log(chalk.bold('\nCreating the necessary files...'))
+  gen.log(chalk.bold('\nCreating the configuration files...'))
 
   // copying files
   files.forEach((cur) => {
