@@ -11,7 +11,9 @@ describe('Uncomplicated generator tests\n\n', function () {
       .inDir(path.join(__dirname, '.tmp'))
       .withPrompts(prompts)
       .withOptions({
-        'skip-install': false
+        'skip-install': false,
+        webpack: true,
+        mocha: true
       })
       .then(function () {
         console.log('\n-----\n')
