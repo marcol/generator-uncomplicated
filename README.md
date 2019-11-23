@@ -21,58 +21,38 @@ npm install -g generator-uncomplicated
 
 Finally, run `yo uncomplicated` and follow the instructions.
 
-## Uage
-### Developing
+## Main Generator
 
-#### Local server
-Launch the webpack server:
+### Local server
+Launch the static dev server:
 ```
-npm run start
-// or you can use
 npm run serve
 ```
 
-#### Linting
+### Linting
 You can check the code syntax and style for JavaScript and CSS.
 ```
 npm run lint
 ```
 You can also check individually CSS `npm run lint:css`, JavaScript `npm run lint:js` or Markdown `npm run lint:md`.
 
-#### Testing
-It runs the [Mocha](https://mochajs.org/) tests added to `test/index.js`. You can test your project by running:
-```
-npm run test
-```
-
-### Deploying
-You can create a build to deploy by running the following command:
-```
-npm run build
-```
-All the needed assets will be in the public folder. Please take in mind that this folder is set to be ignored in the .gitignore config file.
-
-## Cookbook
-You can check the [cookbook](COOKBOOK.md) to expand the generated output functionality.
-
-## Features
-*   Base HTML file with meta and icons
+### Features
+*   Base HTML file with meta
 *   Normalisation of CSS using [normalize.css](https://www.npmjs.com/package/normalize.css)
 *   Empty CSS file included in the HTML file
 *   Empty JavaScript file included in the HTML file
-*   [Babel](https://babeljs.io/) support with linting
 *   Automatic creation of package.json
 *   Automatic installation of the required NPM packages
-*   Basic template for [Mocha](https://mochajs.org/) tests
 *   License (ISC)
+*   Config files (dotfiles):
+    *   Eslint
+    *   Git
+    *   NPM
+    *   Remark (Markdown)
+    *   Stylelint (CSS)
 *   JavaScript linting with [eslint](https://eslint.org/)
     *   Following [Standard](https://standardjs.com/rules.html) code style
     *   Extended linting to [json](https://github.com/Bkucera/eslint-plugin-json-format), [html](https://github.com/BenoitZugmeyer/eslint-plugin-html) and [markdown](https://github.com/eslint/eslint-plugin-markdown) files
     *   Linting of [filenames](https://github.com/selaux/eslint-plugin-filenames) according to exports
 *   Markdown linting with [remarklint](https://github.com/remarkjs/remark-lint), using the [recommended preset](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-recommended).
 *   CSS linting with [stylelint](https://github.com/stylelint/stylelint) following [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
-*   [Webpack](https://webpack.js.org/) support
-    *   Production and Development environments
-    *   Hot reload
-    *   CSS and JavaScript bundling
-*   Automatic generation of logos and icons from logo.svg

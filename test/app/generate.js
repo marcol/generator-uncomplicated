@@ -1,6 +1,6 @@
 const assert = require('yeoman-assert')
-const files = require('../generators/app/config/files')
-const prompts = require('./config/prompts')
+const files = require('../../generators/app/config/files')
+const prompts = require('../config/prompts')
 const targets = files.map((file) => file.target)
 
 describe('Generator deploy', function () {

@@ -12,14 +12,12 @@
   "license": "ISC",
   "author": "<%= name %> <<%= email %>>",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
     "lint": "npm run lint:js && npm run lint:md && npm run lint:css",
     "lint:css": "stylelint **/*.html **/*.css; exit 0",
     "lint:js": "eslint .; exit 0",
     "lint:md": "remark .; exit 0",
-    "test": "mocha 'test/index.js'",
     "serve": "npm run start",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
+    "start": "static-server --port 8080 source/"
   },
   "dependencies": {},
   "devDependencies": {}
