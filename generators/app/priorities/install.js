@@ -6,8 +6,13 @@ module.exports = function (gen) {
   gen.log(chalk.bold('\nInstalling dependencies...'))
 
   // set up static test
-  if (gen.options.namespace === 'uncomplicated:app') {
+  if (!gen.options.webpack) {
     deps.devDependencies.push('static-server')
+  }
+
+  // add mocha
+  if (gen.options.mocha) {
+    deps.devDependencies.push('mocha')
   }
 
   // install npm dependencies

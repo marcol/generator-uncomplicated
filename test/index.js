@@ -22,7 +22,7 @@ describe('Uncomplicated generator tests\n\n', function () {
   })
 
   require('./generate')
-  // TODO mocha tests
+  require('./mocha')
   // TODO webpack tests
 
   after(() => {

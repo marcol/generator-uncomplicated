@@ -17,7 +17,8 @@
     "lint:js": "eslint .; exit 0",
     "lint:md": "remark .; exit 0",
     "serve": "npm run start",
-    "start": "static-server --port 8080 source/"
+    "start": "static-server --port 8080 source/",
+    "test": "<% if (hasMocha) { %>mocha 'test/index.js'<% } %>"
   },
   "dependencies": {},
   "devDependencies": {}

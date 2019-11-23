@@ -20,22 +20,7 @@ module.exports = {
     '@babel/preset-env',
     'mocha',
     'eslint-loader',
-    'eslint',
     'babel-eslint',
-    'eslint-plugin-html',
-    'eslint-plugin-markdown',
-    'eslint-plugin-filenames',
-    'eslint-plugin-json-format',
-    'eslint-plugin-import',
-    'eslint-plugin-node',
-    'eslint-plugin-promise',
-    'eslint-plugin-standard',
-    'eslint-plugin-mocha',
-    'eslint-config-standard',
-    'remark-cli',
-    'remark-lint',
-    'remark-preset-lint-recommended',
-    'stylelint',
-    'stylelint-config-standard'
+    'eslint-plugin-mocha'
   ]
 }
