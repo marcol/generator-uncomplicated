@@ -16,7 +16,7 @@ describe('Generator deploy', function () {
   })
 
   it('checks installed dependencies', () => {
-    assert.file('package-lock.json')
+    assert.file('yarn.lock')
   })
 })
 
