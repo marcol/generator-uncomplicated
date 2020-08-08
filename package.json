@@ -20,6 +20,13 @@
     "lint:md": "remark .; exit 0 ",
     "test": "mocha 'test/index.js'"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn test"
+    }
+  },
   "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "repository": {
     "type": "git",
@@ -33,6 +40,8 @@
     "yeoman-generator": "^4.11.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "chalk": "^4.1.0",
     "eslint": "^7.4.0",
     "eslint-config-standard": "^14.1.1",
@@ -45,6 +54,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
     "mocha": "^8.0.1",
     "remark-cli": "^8.0.0",
     "remark-lint": "^7.0.1",
