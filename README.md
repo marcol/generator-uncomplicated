@@ -1,20 +1,28 @@
 [![NPM Downloads](https://img.shields.io/npm/dt/generator-uncomplicated?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-uncomplicated)
 [![NPM Version](https://img.shields.io/npm/v/generator-uncomplicated?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-uncomplicated)
-![Node.js CI](https://img.shields.io/github/workflow/status/marcol/generator-uncomplicated/Node.js%20CI?label=Node.js%20CI&logo=github&style=flat-square)
 [![Dependencies](https://img.shields.io/librariesio/release/npm/generator-uncomplicated?style=flat-square)](https://libraries.io/npm/generator-uncomplicated)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?logo=javascript&style=flat-square)](https://standardjs.com)
+![Node.js CI](https://img.shields.io/github/workflow/status/marcol/generator-uncomplicated/Node.js%20CI?label=Node.js%20CI&logo=github&style=flat-square)
 
 # generator-uncomplicated
 Uncomplicated Yeoman Generator to kick-off your projects.
 
 ## Install
 First install Yeoman:
+```bash
+yarn add yo --global
 ```
+or
+```bash
 npm install -g yo
 ```
 
 Now install the ultimate generator:
+```bash
+yarn add generator-uncomplicated --global
 ```
+or
+```bash
 npm install -g generator-uncomplicated
 ```
 
@@ -26,16 +34,16 @@ You can also use `yo uncomplicated --mocha` to add Mocha support or `yo uncompli
 
 ### Local server
 Launch the static dev server:
-```
+```bash
 npm run serve
 ```
 
 ### Linting
 You can check the code syntax and style for JavaScript and CSS.
+```bash
+yarn lint
 ```
-npm run lint
-```
-You can also check individually CSS `npm run lint:css`, JavaScript `npm run lint:js` or Markdown `npm run lint:md`.
+You can also check individually CSS `yarn lint:css`, JavaScript `yarn lint:js` or Markdown `yarn lint:md`.
 
 ### Features
 *   Base HTML file with meta
@@ -61,13 +69,13 @@ You can also check individually CSS `npm run lint:css`, JavaScript `npm run lint
 ## Options
 ### Mocha
 Installing the generator with [Mocha](https://mochajs.org/):
-```
+```bash
 yo uncomplicated --mocha
 ```
 
 #### Run tests
-```
-npm run test
+```bash
+yarn test
 ```
 
 #### Developing
@@ -79,20 +87,20 @@ You can add your tests in the `test` folder. The `test/index.js` is the entry fi
 
 ### Webpack
 Installing the generator with [Webpack](https://webpack.js.org/):
-```
+```bash
 yo uncomplicated --webpack
 ```
 
 #### Launching dev server
 Webpack provides a dev server with hot reload:
-```
-npm run serve
+```bash
+yarn serve
 ```
 
 #### Creating a build
 You can create a build to deploy by running the following command:
-```
-npm run buid
+```bash
+yarn build
 ```
 
 #### Additional features
@@ -110,7 +118,7 @@ npm run buid
 ##### Create new html file
 A new HTML file, test.html in this case, can be added by adding the following code in the `webpack.common.js`.
 
-```
+```js
 plugins: [
   new HtmlWebpackPlugin({ template: 'source/index.html' }),
   new HtmlWebpackPlugin({
