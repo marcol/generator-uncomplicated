@@ -20,5 +20,5 @@ module.exports = function (gen) {
 
   // install npm dependencies
   gen.yarnInstall(deps.dependencies, { save: true, skipMessage: true })
-  gen.yarnInstall(deps.devDependencies, { 'save-dev': true, skipMessage: true })
+  gen.yarnInstall(deps.devDependencies, { dev: true, skipMessage: true })
 }
