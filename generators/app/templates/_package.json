@@ -26,7 +26,8 @@
   "overrides": [
     {
       "files": [
-        "**/__tests__/*?(.test|.spec).{j,t}s?(x)"
+        "**/__tests__/*?(.test|.spec).{j,t}s?(x)",
+        "**/tests/*?(.test|.spec).{j,t}s?(x)"
       ],
       "env": {
         "jest/globals": true
