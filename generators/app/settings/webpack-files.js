@@ -1,22 +1,22 @@
 module.exports = [
   {
-    source: 'webpack.common.js',
+    source: '_webpack.common.js',
     target: 'webpack.common.js'
   },
   {
-    source: 'webpack.prod.js',
+    source: '_webpack.prod.js',
     target: 'webpack.prod.js'
   },
   {
-    source: 'webpack.dev.js',
+    source: '_webpack.dev.js',
     target: 'webpack.dev.js'
   },
   {
-    source: 'webpack-index.html',
+    source: '_webpack-index.html',
     target: './source/index.html'
   },
   {
-    source: 'scripts/webpack-index.js',
+    source: 'scripts/_webpack-index.js',
     target: './source/scripts/index.js'
   }
 ]

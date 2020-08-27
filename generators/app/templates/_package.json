@@ -19,8 +19,18 @@
     "serve": "yarn start",
     "start": "<% if (hasWebpack) { %>webpack-dev-server --open --config webpack.dev.js<% } else { %>static-server --port 8080 source/<% } %>",
     "build": "<% if (hasWebpack) { %>webpack --config webpack.prod.js<% } %>",
-    "test": "<% if (hasMocha) { %>mocha 'test/index.js'<% } %>"
+    "test": "<% if (hasJest) { %>jest<% } %>"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {}<% if (hasJest) { %>,
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/*?(.test|.spec).{j,t}s?(x)"
+      ],
+      "env": {
+        "jest/globals": true
+      }
+    }
+  ]<% } %>
 }

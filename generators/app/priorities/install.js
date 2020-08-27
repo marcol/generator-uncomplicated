@@ -13,9 +13,9 @@ module.exports = function (gen) {
     deps.devDependencies.push('static-server')
   }
 
-  // add mocha
-  if (gen.options.mocha) {
-    deps.devDependencies.push('mocha')
+  // add jest
+  if (gen.options.hasJest) {
+    deps.devDependencies.push(require('../settings/jest').devDependencies)
   }
 
   // install npm dependencies
