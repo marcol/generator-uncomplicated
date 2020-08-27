@@ -1,5 +1,5 @@
 const assert = require('yeoman-assert')
-const prompts = require('./config/prompts')
+const prompts = require('../__mocks__/prompts')
 const files = require('../generators/app/settings/files')
 const targets = files.map((file) => file.target)
 

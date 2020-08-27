@@ -2,8 +2,7 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true,
-    "mocha": true
+    "node": true
   },
   "extends": [
     "standard"
@@ -21,7 +20,7 @@
     "markdown",
     "json-format",
     "filenames",
-    "mocha"
+    "jest"
   ],
   "rules": {
       "indent": ["warn", 2],
@@ -32,5 +31,16 @@
       "max-params": ["error", 3],
       "max-statements": ["error", 10],
       "max-statements-per-line": ["error", { "max": 1 }]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/e2e/**/*.spec.{j,t}s?(x)"
+      ],
+      "env": {
+        "jest/globals": true
+      }
+    }
+  ]
 }

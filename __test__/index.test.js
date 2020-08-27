@@ -1,12 +1,11 @@
 const helpers = require('yeoman-test')
 const path = require('path')
 const rimraf = require('rimraf')
-const prompts = require('./config/prompts')
+const prompts = require('../__mocks__/prompts')
 
 describe('Uncomplicated generator tests\n\n', function () {
-  this.timeout(120000)
 
-  before(() => {
+  beforeAll(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(path.join(__dirname, '.tmp'))
       .withPrompts(prompts)
@@ -19,13 +18,13 @@ describe('Uncomplicated generator tests\n\n', function () {
         console.log('\n-----\n')
         return true
       })
-  })
+  }, 120000)
 
   require('./generate')
   require('./mocha')
   require('./webpack')
 
-  after(() => {
+  afterAll(() => {
     rimraf.sync(path.join(__dirname, '.tmp'))
   })
 })
