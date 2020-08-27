@@ -1,6 +1,6 @@
 module.exports.files = [
   {
-    source: 'test/index.js',
+    source: 'tests/index.js',
     target: './__tests__/index.test.js'
   }
 ]
