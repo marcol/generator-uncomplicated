@@ -23,7 +23,7 @@
     "lint:css": "stylelint **/*.html **/*.css",
     "lint:js": "eslint .",
     "lint:md": "remark .",
-    "test": "jest"
+    "test": "jest __tests__/*.test.js"
   },
   "husky": {
     "hooks": {

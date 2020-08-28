@@ -1,9 +1,8 @@
 const sugar = require('sugar-chalk')
+const deps = require('../settings/dependencies')
+const webpackDeps = require('../settings/webpack-dependencies')
 
 module.exports = function (gen) {
-  const deps = require('../settings/dependencies')
-  const webpackDeps = require('../settings/webpack-dependencies')
-
   sugar.info('Installing dependencies...')
 
   // set up static test
@@ -19,6 +18,14 @@ module.exports = function (gen) {
   }
 
   // install npm dependencies
-  gen.yarnInstall(deps.dependencies, { save: true, skipMessage: true })
-  gen.yarnInstall(deps.devDependencies, { dev: true, skipMessage: true })
+  console.log('gen.options.silent', gen.options.silent)
+  gen.yarnInstall(deps.dependencies, {
+    save: true,
+    skipMessage: true,
+    silent: gen.options.silent
+  })
+  gen.yarnInstall(deps.devDependencies, {
+    dev: true,
+    skipMessage: true
+  })
 }
