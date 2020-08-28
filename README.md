@@ -65,10 +65,10 @@ You can also check individually CSS `yarn lint:css`, JavaScript `yarn lint:js` o
 *   CSS linting with [stylelint](https://github.com/stylelint/stylelint) following [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
 
 ## Options
-### Mocha
-Installing the generator with [Mocha](https://mochajs.org/):
+### Jest
+Installing the generator with [Jest](https://jestjs.io/):
 ```bash
-yo uncomplicated --mocha
+yo uncomplicated --jest
 ```
 
 #### Run tests
@@ -77,11 +77,11 @@ yarn test
 ```
 
 #### Developing
-You can add your tests in the `test` folder. The `test/index.js` is the entry file.
+You can add your tests in the `test` folder. The `__test__/index.test.js` is the entry file.
 
 #### Additional features
 *   Index.js with sample tests.
-*   Eslint support to mocha.
+*   Eslint support for jest.
 
 ### Webpack
 Installing the generator with [Webpack](https://webpack.js.org/):

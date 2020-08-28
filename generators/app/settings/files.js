@@ -1,6 +1,6 @@
 module.exports = [
   {
-    source: 'index.html',
+    source: '_index.html',
     target: './source/index.html'
   },
   {
@@ -8,11 +8,11 @@ module.exports = [
     target: './source/assets/logo.svg'
   },
   {
-    source: 'styles/master.css',
+    source: 'styles/_master.css',
     target: './source/styles/master.css'
   },
   {
-    source: 'scripts/index.js',
+    source: 'scripts/_index.js',
     target: './source/scripts/index.js'
   }
 ]

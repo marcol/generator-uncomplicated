@@ -12,7 +12,6 @@ module.exports = {
     'eslint-plugin-import',
     'eslint-plugin-node',
     'eslint-plugin-promise',
-    'eslint-plugin-mocha',
     'eslint-plugin-standard',
     'eslint-config-standard',
     'remark-cli',

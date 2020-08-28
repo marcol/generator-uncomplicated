@@ -1,42 +1,42 @@
 module.exports = [
   {
-    source: 'package.json',
+    source: '_package.json',
     target: 'package.json'
   },
   {
-    source: 'LICENSE',
+    source: '_LICENSE',
     target: 'LICENSE'
   },
   {
-    source: 'README.md',
+    source: '_README.md',
     target: 'README.md'
   },
   {
-    source: 'dotfiles/.eslintrc.json',
+    source: 'dotfiles/_.eslintrc.json',
     target: '.eslintrc.json'
   },
   {
-    source: 'dotfiles/.eslintignore',
+    source: 'dotfiles/_.eslintignore',
     target: '.eslintignore'
   },
   {
-    source: 'dotfiles/.gitignore',
+    source: 'dotfiles/_.gitignore',
     target: '.gitignore'
   },
   {
-    source: 'dotfiles/.remarkrc.js',
+    source: 'dotfiles/_.remarkrc.js',
     target: '.remarkrc.js'
   },
   {
-    source: 'dotfiles/.npmrc',
+    source: 'dotfiles/_.npmrc',
     target: '.npmrc'
   },
   {
-    source: 'dotfiles/.stylelintrc.json',
+    source: 'dotfiles/_.stylelintrc.json',
     target: '.stylelintrc.json'
   },
   {
-    source: 'dotfiles/.stylelintignore',
+    source: 'dotfiles/_.stylelintignore',
     target: '.stylelintignore'
   }
 ]

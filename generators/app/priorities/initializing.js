@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const sugar = require('sugar-chalk')
 
 /**
  * initialization methods: checking current project state, getting
@@ -6,5 +6,5 @@ const chalk = require('chalk')
  * @return void
  */
 module.exports = function (gen) {
-  gen.log(chalk.bold.blue('\nWelcome to Uncomplicated, a simple generator to start your web projects!'))
+  sugar.info('Welcome to Uncomplicated, a simple generator to start your web projects!')
 }

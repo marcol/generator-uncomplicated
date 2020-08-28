@@ -1,10 +1,9 @@
-const chalk = require('chalk')
+const sugar = require('sugar-chalk')
+const deps = require('../settings/dependencies')
+const webpackDeps = require('../settings/webpack-dependencies')
 
 module.exports = function (gen) {
-  const deps = require('../settings/dependencies')
-  const webpackDeps = require('../settings/webpack-dependencies')
-
-  gen.log(chalk.bold('\nInstalling dependencies...'))
+  sugar.info('Installing dependencies...')
 
   // set up static test
   if (gen.options.webpack) {
@@ -13,12 +12,19 @@ module.exports = function (gen) {
     deps.devDependencies.push('static-server')
   }
 
-  // add mocha
-  if (gen.options.mocha) {
-    deps.devDependencies.push('mocha')
+  // add jest
+  if (gen.options.hasJest) {
+    deps.devDependencies = deps.devDependencies.concat(require('../settings/jest').devDependencies)
   }
 
   // install npm dependencies
-  gen.yarnInstall(deps.dependencies, { save: true, skipMessage: true })
-  gen.yarnInstall(deps.devDependencies, { dev: true, skipMessage: true })
+  gen.yarnInstall(deps.dependencies, {
+    save: true,
+    skipMessage: true,
+    silent: gen.options.silent
+  })
+  gen.yarnInstall(deps.devDependencies, {
+    dev: true,
+    skipMessage: true
+  })
 }

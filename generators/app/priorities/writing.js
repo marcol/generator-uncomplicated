@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const sugar = require('sugar-chalk')
 
 module.exports = function (gen) {
   let files = require('../settings/files.js')
@@ -7,14 +7,14 @@ module.exports = function (gen) {
     name: gen.answers.name,
     email: gen.answers.email,
     year: (new Date().getFullYear()),
-    hasMocha: gen.options.mocha,
+    hasJest: gen.options.jest,
     hasWebpack: gen.options.webpack
   }
 
-  gen.log(chalk.bold('\nCreating the necessary files...'))
+  sugar.info('Creating the necessary files...')
 
-  if (gen.options.mocha) {
-    files = files.concat(require('../settings/mocha-files.js'))
+  if (gen.options.jest) {
+    files = files.concat(require('../settings/jest.js').files)
   }
 
   if (gen.options.webpack) {

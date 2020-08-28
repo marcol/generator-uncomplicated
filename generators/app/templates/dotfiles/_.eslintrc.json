@@ -18,8 +18,8 @@
     "html",
     "markdown",
     "json-format",
-    "filenames",
-    "mocha"
+    "filenames"<% if (hasJest) { %>,
+    "jest"<% } %>
   ],
   "rules": {
     "indent": ["warn", 2],

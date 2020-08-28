@@ -1,5 +1,5 @@
-const chalk = require('chalk')
+const sugar = require('sugar-chalk')
 
 module.exports = function (gen) {
-  gen.log(chalk.bold.green('\nDone! See you soon in your next adventure!'))
+  sugar.done('Done! See you soon in your next adventure!')
 }
