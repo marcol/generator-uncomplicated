@@ -1,6 +1,6 @@
 {
   "name": "generator-uncomplicated",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Uncomplicated Yeoman generator for quick web projects",
   "keywords": [
     "CSS",
@@ -23,7 +23,7 @@
     "lint:css": "stylelint **/*.html **/*.css",
     "lint:js": "eslint .",
     "lint:md": "remark .",
-    "test": "jest __tests__/*.test.js"
+    "test": "jest __tests__/index.test.js"
   },
   "husky": {
     "hooks": {
