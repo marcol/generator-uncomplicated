@@ -6,6 +6,7 @@ const prompts = require('../__mocks__/prompts')
 
 describe('Uncomplicated generator tests', function () {
   beforeAll(async (done) => {
+    process.env.TEST = true
     await helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(path.join(__dirname, '.tmp'))
       .withPrompts(prompts)

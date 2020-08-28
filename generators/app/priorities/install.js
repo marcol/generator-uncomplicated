@@ -1,10 +1,10 @@
-const chalk = require('chalk')
+const sugar = require('sugar-chalk')
 
 module.exports = function (gen) {
   const deps = require('../settings/dependencies')
   const webpackDeps = require('../settings/webpack-dependencies')
 
-  gen.log(chalk.bold('\nInstalling dependencies...'))
+  sugar.info('Installing dependencies...')
 
   // set up static test
   if (gen.options.webpack) {
