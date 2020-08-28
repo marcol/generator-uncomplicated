@@ -14,11 +14,10 @@ module.exports = function (gen) {
 
   // add jest
   if (gen.options.hasJest) {
-    deps.devDependencies.push(require('../settings/jest').devDependencies)
+    deps.devDependencies = deps.devDependencies.concat(require('../settings/jest').devDependencies)
   }
 
   // install npm dependencies
-  console.log('gen.options.silent', gen.options.silent)
   gen.yarnInstall(deps.dependencies, {
     save: true,
     skipMessage: true,

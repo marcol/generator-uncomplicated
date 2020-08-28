@@ -8,6 +8,12 @@ describe('tests installation with jest', () => {
     assert.file(targets)
   })
 
+  test('checks if jest was added an eslint plugin', () => {
+    assert.jsonFileContent(path.join(__dirname, '.tmp/.eslintrc.json'), {
+      plugins: ['html', 'markdown', 'json-format', 'filenames', 'jest']
+    })
+  })
+
   test('checks if jest script is available', () => {
     assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), {
       scripts: {

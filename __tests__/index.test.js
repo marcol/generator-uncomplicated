@@ -27,3 +27,4 @@ afterAll(() => {
 require('./default')
 require('./webpack')
 require('./jest')
+require('./lint')
