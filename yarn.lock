@@ -6437,10 +6437,10 @@ stylelint@^13.6.1:
     v8-compile-cache "^2.1.1"
     write-file-atomic "^3.0.3"
 
-sugar-chalk@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/sugar-chalk/-/sugar-chalk-1.5.3.tgz#350d65283c18a13130d903667aa32e708bdd3c96"
-  integrity sha512-g/NmVDJGqtIcrjOOx3zt0ilAXzwSgzvw+rot272SGIgyC583iwfeoKHprYHciJ7YuS7Gv83aFj6D9aS8tdtBXw==
+sugar-chalk@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/sugar-chalk/-/sugar-chalk-1.5.4.tgz#4c3a017f1a29a20a931259cd12268f5a8c4c3b62"
+  integrity sha512-JiQ2MLw5bB7M8pHCsHQX3qsmHMP7zMisbH7VlLd18Eokxn++hI78etLc4Mo/boC6q+uNVH+wf2vmSypjoAYS/A==
   dependencies:
     chalk "^4.1.0"
 
