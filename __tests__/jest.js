@@ -21,8 +21,8 @@ describe('tests installation with jest', () => {
       },
       overrides: [{
         files: [
-          '**/__tests__/*?(.test|.spec).{j,t}s?(x)',
-          '**/tests/*?(.test|.spec).{j,t}s?(x)'
+          '**/{__tests__,tests}/*.{j,t}s?(x)',
+          '**/{__tests__,tests}/**/*.{j,t}s?(x)'
         ],
         env: {
           'jest/globals': true
