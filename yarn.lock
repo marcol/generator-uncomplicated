@@ -6584,10 +6584,10 @@ stylelint-config-standard@^20.0.0:
   dependencies:
     stylelint-config-recommended "^3.0.0"
 
-stylelint@^13.10.0:
-  version "13.10.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.10.0.tgz#67b0c6f378c3fa61aa569a55d38feb8570b0b587"
-  integrity sha512-eDuLrL0wzPKbl5/TbNGZcbw0lTIGbDEr5W6lCODvb1gAg0ncbgCRt7oU0C2VFDvbrcY0A3MFZOwltwTRmc0XCw==
+stylelint@^13.11.0:
+  version "13.11.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.11.0.tgz#591981fbdd68c9d3d3e6147a0cd6a07539fc216d"
+  integrity sha512-DhrKSWDWGZkCiQMtU+VroXM6LWJVC8hSK24nrUngTSQvXGK75yZUq4yNpynqrxD3a/fzKMED09V+XxO4z4lTbw==
   dependencies:
     "@stylelint/postcss-css-in-js" "^0.37.2"
     "@stylelint/postcss-markdown" "^0.36.2"
@@ -6638,10 +6638,10 @@ stylelint@^13.10.0:
     v8-compile-cache "^2.2.0"
     write-file-atomic "^3.0.3"
 
-sugar-chalk@^1.6.4:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/sugar-chalk/-/sugar-chalk-1.6.4.tgz#9ad0a5800d9fb9f7ea34b9051babb492db7f387f"
-  integrity sha512-p41FpYX0Lm09hm6XLGyh+HMi7iuwX8+hamTMqxqGwKgblkqdA09MlVfSlQCOEdKP2wR3f3+RYjI4AlQru6x87Q==
+sugar-chalk@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/sugar-chalk/-/sugar-chalk-1.6.5.tgz#42921278d0fc3679e6bcdab37c97c4004d762d9a"
+  integrity sha512-YDgw1IMO15Xk/6Sa0B94ogfo2wIL911U48ygp1ClpW6My3T1jd45QnUZgj+vwJHuDcGHITW2ZdxwAiXoOBfCAg==
   dependencies:
     chalk "^4.1.0"
 
