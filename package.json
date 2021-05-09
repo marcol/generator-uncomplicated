@@ -1,6 +1,6 @@
 {
   "name": "generator-uncomplicated",
-  "version": "1.5.10",
+  "version": "1.6.0",
   "description": "Uncomplicated Yeoman generator for quick web projects",
   "keywords": [
     "CSS",
@@ -54,7 +54,7 @@
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^2.1.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "pinst": "^2.1.4",
@@ -65,10 +65,9 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^5.1.0"
+    "yeoman-test": "^6.0.0"
   },
   "resolutions": {
-    "**/y18n": "^5.0.8",
-    "**/hosted-git-info": "^3.0.8"
+    "**/lodash": "^4.17.21"
   }
 }
