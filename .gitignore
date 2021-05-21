@@ -40,3 +40,4 @@ tmp/
 .yarn-integrity
 Desktop.ini
 Thumbs.db
+*.todo

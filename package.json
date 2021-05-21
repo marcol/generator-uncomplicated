@@ -1,6 +1,6 @@
 {
   "name": "generator-uncomplicated",
-  "version": "1.6.1",
+  "version": "2.0.0",
   "description": "Uncomplicated Yeoman generator for quick web projects",
   "keywords": [
     "CSS",
@@ -40,16 +40,17 @@
   ],
   "dependencies": {
     "sugar-chalk": "^1.6.5",
-    "yeoman-generator": "^4.13.0"
+    "yeoman-generator": "^5.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "deep-extend": "^0.6.0",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-html": "^6.1.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jest": "^24.1.6",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^2.1.0",
@@ -65,10 +66,11 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^6.0.0"
+    "yeoman-environment": "^3.4.0",
+    "yeoman-test": "^6.1.0"
   },
   "resolutions": {
-    "**/lodash": "^4.17.21",
-    "**/trim": "^0.0.3"
+    "**/postcss": "^8.2.10",
+    "**/trim": "^1.0.1"
   }
 }
