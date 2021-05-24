@@ -1,7 +1,7 @@
 const sugar = require('sugar-chalk')
+const extend = require('deep-extend')
 
 module.exports = function (gen) {
-  let files = require('../settings/files.js')
   const data = {
     project: gen.answers.project,
     name: gen.answers.name,
@@ -11,18 +11,34 @@ module.exports = function (gen) {
     hasWebpack: gen.options.webpack
   }
 
+  const cfg = {
+    package: {
+      name: gen.answers.project,
+      author: {
+        name: gen.answers.name,
+        email: gen.answers.email
+      }
+    }
+  }
+
   sugar.info('Creating the necessary files...')
 
+  // get base cofiguration
+  extend(cfg, require('../settings/config.js'))
+
   if (gen.options.jest) {
-    files = files.concat(require('../settings/jest.js').files)
+    extend(cfg, require('../settings/jest.js'))
   }
 
   if (gen.options.webpack) {
-    files = files.concat(require('../settings/webpack-files.js'))
+    extend(cfg, require('../settings/webpack.js'))
   }
 
   // copying files
-  files.forEach((cur) => {
+  cfg.files.forEach((cur) => {
     gen.fs.copyTpl(gen.templatePath(cur.source), gen.destinationPath(cur.target), data)
   })
+
+  // write package.json
+  gen.fs.writeJSON(gen.destinationPath('package.json'), cfg.package)
 }
