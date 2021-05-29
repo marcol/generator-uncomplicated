@@ -8,7 +8,7 @@ module.exports = {
   ],
   package: {
     scripts: {
-      serve: 'webpack-dev-server --open --config webpack.dev.js',
+      serve: 'webpack serve --open --config webpack.dev.js',
       build: 'webpack --config webpack.prod.js'
     },
     devDependencies: {
@@ -28,7 +28,7 @@ module.exports = {
       'babel-loader': '^8.2.2',
       '@babel/core': '^7.14.3',
       '@babel/preset-env': '^7.2.0',
-      'eslint-webpack-plugin': ''
+      'eslint-webpack-plugin': '^2.5.4'
     }
   }
 }
