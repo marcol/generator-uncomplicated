@@ -23,7 +23,7 @@ module.exports = {
       favicons: '^6.2.0',
       'favicons-webpack-plugin': '^5.0.2',
       'extract-css-chunks-webpack-plugin': '^4.9.0',
-      'optimize-css-assets-webpack-plugin': '^6.0.0',
+      'css-minimizer-webpack-plugin': '^3.0.0',
       'terser-webpack-plugin': '^5.1.2',
       'babel-loader': '^8.2.2',
       '@babel/core': '^7.14.3',
