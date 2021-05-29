@@ -4,7 +4,7 @@ module.exports = {
   ],
   package: {
     devDependencies: {
-      jest: '^27.0.0-next.11',
+      jest: '^27.0.3',
       'eslint-plugin-jest': '^24.3.6'
     },
     scripts: {
