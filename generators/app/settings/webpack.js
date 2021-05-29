@@ -8,7 +8,7 @@ module.exports = {
   ],
   package: {
     scripts: {
-      start: 'webpack-dev-server --open --config webpack.dev.js',
+      serve: 'webpack-dev-server --open --config webpack.dev.js',
       build: 'webpack --config webpack.prod.js'
     },
     devDependencies: {

@@ -39,13 +39,14 @@ module.exports = {
       'remark-lint': '^8.0.0',
       'remark-preset-lint-recommended': '^5.0.0',
       stylelint: '^13.13.1',
-      'stylelint-config-standard': '^22.0.0'
+      'stylelint-config-standard': '^22.0.0',
+      'browser-sync': '^2.26.14'
     },
     scripts: {
       'lint:css': 'stylelint **/*.html **/*.css',
       'lint:js': 'eslint .',
       'lint:md': 'remark .',
-      start: 'static-server --port 8080 source/'
+      serve: 'browser-sync start --server ./source --port 8080 --watch ./source --open'
     },
     resolutions: {}
   }
