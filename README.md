@@ -33,7 +33,7 @@ You can also use `yo uncomplicated --mocha` to add Mocha support or `yo uncompli
 ### Local server
 Launch the static dev server:
 ```bash
-npm run serve
+yarn serve
 ```
 
 ### Linting

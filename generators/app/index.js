@@ -3,10 +3,10 @@ const { info } = require('sugar-chalk')
 
 class Uncomplicated extends Generator {
   constructor (args, opts) {
-    super(args, opts)
+    super(args, { ...opts, unique: 'namespace' })
 
     // set options
-    this.option('mocha')
+    this.option('jest')
     this.option('webpack')
   }
 
@@ -30,28 +30,11 @@ class Uncomplicated extends Generator {
   }
 
   /**
-   * Saving configurations and configure the project (creating .editorconfig
-   * files and other metadata files)
-   * @return void
-   */
-  configuring () {
-    require('./priorities/configuring')(this)
-  }
-
-  /**
    * Qrite the generator specific files (routes, controllers, etc)
    * @return void
    */
   writing () {
     require('./priorities/writing')(this)
-  }
-
-  /**
-   * Install (npm...)
-   * @return void
-   */
-  install () {
-    require('./priorities/install')(this)
   }
 
   /**

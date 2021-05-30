@@ -5,10 +5,10 @@ const rimraf = require('rimraf')
 const { ESLint } = require('eslint')
 
 const prompts = require('../__mocks__/prompts')
-const target = path.join(__dirname, '.tmp')
+const target = path.join(__dirname, '.tmp-jest')
 
-describe('tests default instalation', () => {
-  const cfg = require('../generators/app/settings/config')
+describe('tests installation with jest', () => {
+  const cfg = require('../generators/app/settings/jest')
 
   beforeAll(async () => {
     process.env.TEST = true
@@ -18,7 +18,8 @@ describe('tests default instalation', () => {
       .withPrompts(prompts)
       .withOptions({
         'skip-install': false,
-        silent: true
+        silent: true,
+        jest: true
       })
   }, 120000)
 
@@ -27,36 +28,27 @@ describe('tests default instalation', () => {
     process.env.TEST = false
   })
 
-  test('checks if files were created', () => {
+  test('checks if test file', () => {
     const targets = cfg.files.map((file) => file.target)
     assert.file(targets)
   })
 
-  test('checks if inserted information is correct', () => {
-    assert.jsonFileContent('package.json', {
-      name: prompts.project,
-      author: {
-        name: prompts.name,
-        email: prompts.email
-      }
+  test('checks if jest was added an eslint plugin', () => {
+    assert.jsonFileContent(path.join(target, '.eslintrc.json'), {
+      plugins: ['html', 'markdown', 'json-format', 'filenames', 'jest']
     })
   })
 
-  test('checks installed dependencies', () => {
+  test('checks if jest script is available', () => {
     const pkg = require(path.join(target, 'package.json'))
-    Object.keys(cfg.package.dependencies).forEach((key) => {
-      assert.textEqual(pkg.dependencies[key], cfg.package.dependencies[key])
-    })
-    Object.keys(cfg.package.devDependencies).forEach((key) => {
-      assert.textEqual(pkg.devDependencies[key], cfg.package.devDependencies[key])
-    })
-  })
 
-  test('checks scripts', () => {
-    const pkg = require(path.join(target, 'package.json'))
     Object.keys(cfg.package.scripts).forEach((key) => {
       assert.textEqual(pkg.scripts[key], cfg.package.scripts[key])
     })
+  })
+
+  test('checks if overrides are in package.json', () => {
+    assert.jsonFileContent(path.join(target, 'package.json'), { overrides: cfg.package.overrides })
   })
 
   test('runs linting', async () => {
