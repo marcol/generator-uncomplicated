@@ -10,7 +10,7 @@ const target = path.join(__dirname, '.tmp-webpack')
 describe('tests installation with webpack', () => {
   const cfg = require('../generators/app/settings/webpack')
 
-  beforeAll(async (done) => {
+  beforeAll(async () => {
     process.env.TEST = true
     await helpers
       .run(path.join(__dirname, '../generators/app'))
@@ -21,8 +21,6 @@ describe('tests installation with webpack', () => {
         silent: true,
         webpack: true
       })
-
-    done()
   }, 120000)
 
   afterAll(() => {

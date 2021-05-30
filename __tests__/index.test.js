@@ -10,7 +10,7 @@ const target = path.join(__dirname, '.tmp')
 describe('tests default instalation', () => {
   const cfg = require('../generators/app/settings/config')
 
-  beforeAll(async (done) => {
+  beforeAll(async () => {
     process.env.TEST = true
     await helpers
       .run(path.join(__dirname, '../generators/app'))
@@ -20,8 +20,6 @@ describe('tests default instalation', () => {
         'skip-install': false,
         silent: true
       })
-
-    done()
   }, 120000)
 
   afterAll(() => {

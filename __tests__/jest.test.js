@@ -10,7 +10,7 @@ const target = path.join(__dirname, '.tmp-jest')
 describe('tests installation with jest', () => {
   const cfg = require('../generators/app/settings/jest')
 
-  beforeAll(async (done) => {
+  beforeAll(async () => {
     process.env.TEST = true
     await helpers
       .run(path.join(__dirname, '../generators/app'))
@@ -21,8 +21,6 @@ describe('tests installation with jest', () => {
         silent: true,
         jest: true
       })
-
-    done()
   }, 120000)
 
   afterAll(() => {
