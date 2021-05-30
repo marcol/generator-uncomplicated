@@ -18,7 +18,7 @@ module.exports = {
       'css-loader': '^5.2.5',
       'file-loader': '^6.2.0',
       'html-webpack-plugin': '^5.3.1',
-      'clean-webpack-plugin': '^3.0.0',
+      'clean-webpack-plugin': '4.0.0-alpha.0',
       'webpack-dev-server': '^3.11.2',
       'webpack-merge': '^5.7.3',
       favicons: '^6.2.0',
