@@ -26,7 +26,8 @@
     "test": "jest __tests__",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "release": "node .scripts/release"
   },
   "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "repository": {
@@ -55,14 +56,16 @@
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^2.2.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-promise": "^5.1.0",
     "husky": "^6.0.0",
     "jest": "^27.0.3",
+    "listr": "^0.14.3",
     "pinst": "^2.1.4",
     "remark-cli": "^9.0.0",
     "remark-lint": "^8.0.0",
     "remark-preset-lint-recommended": "^5.0.0",
     "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "yeoman-assert": "^3.1.1",
