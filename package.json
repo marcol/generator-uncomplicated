@@ -71,6 +71,6 @@
   },
   "resolutions": {
     "**/postcss": "^8.2.10",
-    "**/trim": "^1.0.1"
+    "**/browserslist": "^4.16.5"
   }
 }
