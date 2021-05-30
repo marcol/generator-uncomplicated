@@ -9,7 +9,8 @@ module.exports = {
   package: {
     scripts: {
       serve: 'webpack serve --open --config webpack.dev.js',
-      build: 'webpack --config webpack.prod.js'
+      build: 'webpack --config webpack.prod.js',
+      'serve:build': 'webpack serve --config webpack.prod.js'
     },
     devDependencies: {
       webpack: '^5.37.1',
