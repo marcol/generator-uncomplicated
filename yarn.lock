@@ -1954,6 +1954,14 @@ chalk@^4.1.1:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chalk@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 char-regex@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/char-regex/-/char-regex-1.0.2.tgz#d744358226217f981ed58f479b1d6bcc29545dcf"
@@ -7095,12 +7103,12 @@ stylelint@^13.13.1:
     v8-compile-cache "^2.3.0"
     write-file-atomic "^3.0.3"
 
-sugar-chalk@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/sugar-chalk/-/sugar-chalk-1.6.5.tgz#42921278d0fc3679e6bcdab37c97c4004d762d9a"
-  integrity sha512-YDgw1IMO15Xk/6Sa0B94ogfo2wIL911U48ygp1ClpW6My3T1jd45QnUZgj+vwJHuDcGHITW2ZdxwAiXoOBfCAg==
+sugar-chalk@^1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/sugar-chalk/-/sugar-chalk-1.6.7.tgz#6fa82011f527de60577a7642113939439d260cff"
+  integrity sha512-R4RzCzQYipT4KskBLTFiDBvE2+VsCRhIn/YAmXiQC2fP2Jl/+QGSe4/fpCQ+ImyFJVWScvFcW9o/nz0pVXnZXQ==
   dependencies:
-    chalk "^4.1.0"
+    chalk "^4.1.2"
 
 sugarss@^2.0.0:
   version "2.0.0"
@@ -7997,10 +8005,10 @@ yeoman-environment@^3.4.1:
     textextensions "^5.12.0"
     untildify "^4.0.0"
 
-yeoman-generator@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.3.0.tgz#06ec2d00a2521e299b2581b6ed0eaed01c928187"
-  integrity sha512-OE+qDs/c5V3HP29hUlyUO7ejpLSJX93LZ+KFRmyYmPMvcbnsdHynF6LyOh0vLPuqsi/x50MxZfob/EIQ06E4EQ==
+yeoman-generator@^5.4.2:
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.4.2.tgz#ad1ad7bf7c9771a8bbf07ead2eec79ebcdc51a20"
+  integrity sha512-xgS3A4r5VoEYq3vPdk1fWPVZ30y5NHlT2hn0OEyhKG79xojCtPkPkfWcKQamgvC9QLhaotVGvambBxwxwBeDTg==
   dependencies:
     chalk "^4.1.0"
     dargs "^7.0.0"
