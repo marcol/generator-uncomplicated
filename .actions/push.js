@@ -27,9 +27,6 @@
  }
  
  const tasks = new Runner([
-   { title: 'Run CSS linters', task: (ctx) => promise('yarn lint:css', ctx) },
-   { title: 'Run JS linters', task: (ctx) => promise('yarn lint:js', ctx) },
-   { title: 'Run Markdown linters', task: (ctx) => promise('yarn lint:md', ctx) },
    { title: 'Check for vulnerabilites in dependencies', task: (ctx) => promise('yarn audit --groups dependencies', ctx) },
    { title: 'Run unit tests', task: (ctx) => promise('yarn test', ctx) }
  ])
