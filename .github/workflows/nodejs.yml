@@ -22,5 +22,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         check-latest: true
     - run: yarn install
-    - run: yarn lint
     - run: yarn test
