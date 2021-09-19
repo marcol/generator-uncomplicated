@@ -15,10 +15,10 @@ module.exports = {
     devDependencies: {
       webpack: '^5.37.1',
       'webpack-cli': '^4.7.0',
-      'css-loader': '^5.2.5',
+      'css-loader': '^6.3.0',
       'file-loader': '^6.2.0',
       'html-webpack-plugin': '^5.3.1',
-      'clean-webpack-plugin': '4.0.0-alpha.0',
+      'clean-webpack-plugin': '4.0.0',
       'webpack-dev-server': '^3.11.2',
       'webpack-merge': '^5.7.3',
       favicons: '^6.2.0',
@@ -29,7 +29,7 @@ module.exports = {
       'babel-loader': '^8.2.2',
       '@babel/core': '^7.14.3',
       '@babel/preset-env': '^7.2.0',
-      'eslint-webpack-plugin': '^2.5.4'
+      'eslint-webpack-plugin': '^3.0.1'
     }
   }
 }

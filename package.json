@@ -19,7 +19,6 @@
     "yeoman-generator"
   ],
   "scripts": {
-    "lint": "yarn lint:js && yarn lint:md && yarn lint:css",
     "lint:css": "stylelint **/*.html **/*.css",
     "lint:js": "eslint .",
     "lint:md": "remark .",
@@ -27,7 +26,7 @@
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "release": "node .scripts/release"
+    "release": "node .actions/release"
   },
   "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "repository": {
@@ -40,12 +39,12 @@
     "generators"
   ],
   "dependencies": {
-    "sugar-chalk": "^1.6.5",
-    "yeoman-generator": "^5.3.0"
+    "sugar-chalk": "^1.6.7",
+    "yeoman-generator": "^5.4.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "deep-extend": "^0.6.0",
     "eslint": "^7.27.0",
     "eslint-config-standard": "^16.0.3",
@@ -57,13 +56,13 @@
     "eslint-plugin-markdown": "^2.2.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.2",
     "jest": "^27.0.3",
     "listr": "^0.14.3",
     "pinst": "^2.1.4",
-    "remark-cli": "^9.0.0",
-    "remark-lint": "^8.0.0",
-    "remark-preset-lint-recommended": "^5.0.0",
+    "remark-cli": "^10.0.0",
+    "remark-lint": "^9.1.0",
+    "remark-preset-lint-recommended": "^6.1.0",
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.4",
     "stylelint": "^13.13.1",
