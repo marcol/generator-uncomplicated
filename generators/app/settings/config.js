@@ -22,7 +22,7 @@ module.exports = {
     bugs: '',
     license: 'ISC',
     dependencies: {
-      'normalize.css': ''
+      'normalize.css': '^8.0.1'
     },
     devDependencies: {
       eslint: '^7.27.0',
@@ -33,11 +33,11 @@ module.exports = {
       'eslint-plugin-json-format': '^2.0.1',
       'eslint-plugin-import': '^2.23.3',
       'eslint-plugin-node': '^11.1.0',
-      'eslint-plugin-promise': '^4.2.1',
+      'eslint-plugin-promise': '^5.1.0',
       'eslint-config-standard': '^16.0.2',
-      'remark-cli': '^9.0.0',
-      'remark-lint': '^8.0.0',
-      'remark-preset-lint-recommended': '^5.0.0',
+      'remark-cli': '^10.0.0',
+      'remark-lint': '^9.1.0',
+      'remark-preset-lint-recommended': '^6.1.0',
       stylelint: '^13.13.1',
       'stylelint-config-standard': '^22.0.0',
       'browser-sync': '^2.26.14'

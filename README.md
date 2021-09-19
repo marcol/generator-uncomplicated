@@ -26,7 +26,7 @@ npm install -g generator-uncomplicated
 
 Finally, run `yo uncomplicated` and follow the instructions.
 
-You can also use `yo uncomplicated --mocha` to add Mocha support or `yo uncomplicated --webpack` to setup the project with webpack.
+You can also use `yo uncomplicated --jest` to add Jest support or `yo uncomplicated --webpack` to setup the project with webpack.
 
 ## Generator
 
