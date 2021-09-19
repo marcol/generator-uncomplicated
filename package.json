@@ -1,6 +1,6 @@
 {
   "name": "generator-uncomplicated",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Uncomplicated Yeoman generator for quick web projects",
   "keywords": [
     "CSS",
@@ -25,8 +25,7 @@
     "test": "jest __tests__",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
-    "release": "node .actions/release"
+    "postpublish": "pinst --enable"
   },
   "bugs": "https://github.com/marcol/generator-uncomplicated/issues",
   "repository": {

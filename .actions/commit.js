@@ -13,12 +13,11 @@
   * @param  {Object} log Ora instance to log information
   * @return void
   */
- function promise (cmd, ctx) {
+ function promise (cmd) {
    return new Promise((resolve, reject) => {
      shell.exec(cmd, { silent: true }, (code) => {
        if (code) {
-         reject(code)
-         ctx.rejected = true
+         reject(new Error('Command exited with code' + code))
        } else {
          resolve()
        }
@@ -27,9 +26,9 @@
  }
  
  const tasks = new Runner([
-   { title: 'Run CSS linters', task: (ctx) => promise('yarn lint:css', ctx) },
-   { title: 'Run JS linters', task: (ctx) => promise('yarn lint:js', ctx) },
-   { title: 'Run Markdown linters', task: (ctx) => promise('yarn lint:md', ctx) }
+   { title: 'Run CSS linters', task: () => promise('yarn lint:css') },
+   { title: 'Run JS linters', task: () => promise('yarn lint:js') },
+   { title: 'Run Markdown linters', task: () => promise('yarn lint:md') }
  ])
  
  tasks.run()
