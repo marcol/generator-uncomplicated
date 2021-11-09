@@ -8,7 +8,7 @@ Uncomplicated Yeoman Generator to kick-off your projects.
 ## Install
 First install Yeoman:
 ```bash
-yarn add yo --global
+yarn global add yo
 ```
 or
 ```bash
@@ -17,7 +17,7 @@ npm install -g yo
 
 Now install the ultimate generator:
 ```bash
-yarn add generator-uncomplicated --global
+yarn global add generator-uncomplicated
 ```
 or
 ```bash
