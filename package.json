@@ -70,8 +70,5 @@
     "yeoman-environment": "^3.4.1",
     "yeoman-test": "^6.1.0"
   },
-  "resolutions": {
-    "**/postcss": "^8.2.10",
-    "**/browserslist": "^4.16.6"
-  }
+  "resolutions": {}
 }
