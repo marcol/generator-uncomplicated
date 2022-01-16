@@ -35,6 +35,7 @@ module.exports = {
       'eslint-plugin-node': '^11.1.0',
       'eslint-plugin-promise': '^5.1.0',
       'eslint-config-standard': '^16.0.2',
+      'postcss-html': '^1.3.0',
       'remark-cli': '^10.0.0',
       'remark-lint': '^9.1.0',
       'remark-preset-lint-recommended': '^6.1.0',
