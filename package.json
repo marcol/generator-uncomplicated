@@ -71,5 +71,8 @@
     "yeoman-environment": "^3.8.1",
     "yeoman-test": "^6.1.0"
   },
-  "resolutions": {}
+  "resolutions": {
+    "**/ansi-regex": "^5.0.1",
+    "**/shelljs": "^0.8.5"
+  }
 }
