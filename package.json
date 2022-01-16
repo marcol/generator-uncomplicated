@@ -42,8 +42,8 @@
     "yeoman-generator": "^5.4.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
     "deep-extend": "^0.6.0",
     "eslint": "^7.27.0",
     "eslint-config-standard": "^16.0.3",
