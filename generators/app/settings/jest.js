@@ -1,24 +1,27 @@
 module.exports = {
   files: [
-    { source: 'tests/index.js', target: './__tests__/index.test.js' }
+    {
+      source: 'tests/index.js',
+      target: './__tests__/index.test.js'
+    }
   ],
   package: {
     devDependencies: {
-      jest: '^27.0.0-next.11',
-      'eslint-plugin-jest': '^24.3.6'
+      jest: '^28.1.0',
+      'eslint-plugin-jest': '^26.2.2'
     },
     scripts: {
       test: 'jest'
+    },
+    jest: {
+      verbose: true
     },
     overrides: [
       {
         files: [
           '**/{__tests__,tests}/*.{j,t}s?(x)',
           '**/{__tests__,tests}/**/*.{j,t}s?(x)'
-        ],
-        env: {
-          'jest/globals': true
-        }
+        ]
       }
     ]
   }
