@@ -74,5 +74,8 @@
     "yeoman-environment": "^3.9.1",
     "yeoman-test": "^6.3.0"
   },
-  "resolutions": {}
+  "resolutions": {
+    "**/minimatch": "^3.0.5",
+    "**/terser": "^5.14.2"
+  }
 }
