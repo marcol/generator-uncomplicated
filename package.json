@@ -38,7 +38,7 @@
     "generators"
   ],
   "dependencies": {
-    "sugar-chalk": "^1.6.7",
+    "sugar-chalk": "^2.2.0",
     "yeoman-generator": "^5.6.1"
   },
   "devDependencies": {
