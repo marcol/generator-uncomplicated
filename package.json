@@ -1,6 +1,6 @@
 {
   "name": "generator-uncomplicated",
-  "version": "2.1.2",
+  "version": "2.5.0",
   "description": "Uncomplicated Yeoman generator for quick web projects",
   "keywords": [
     "CSS",
@@ -38,7 +38,7 @@
     "generators"
   ],
   "dependencies": {
-    "sugar-chalk": "^1.6.7",
+    "sugar-chalk": "^2.2.0",
     "yeoman-generator": "^5.6.1"
   },
   "devDependencies": {
